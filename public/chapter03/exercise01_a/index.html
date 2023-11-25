@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="de">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Übung 3 - Operatoren &amp; Addons - Datenverarbeitung in der Medienproduktion</title>
+
+    
+    <meta name="description" content="Online-Material zur Veranstaltung Datenverarbeitung in der Medienproduktion.">
+    
+    <link rel="canonical" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter03/exercise01_a/">
+    
+
+    <meta property="og:url" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter03/exercise01_a/">
+    <meta property="og:title" content="Datenverarbeitung in der Medienproduktion">
+    <meta property="og:image" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+    <meta name="apple-mobile-web-app-title" content="Datenverarbeitung in der Medienproduktion">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+    <link rel="icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot');
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.woff')
+               format('woff'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.ttf')
+               format('truetype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/application.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/custom.css">
+    
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/modernizr.js"></script>
+
+
+  </head>
+  <body class="palette-primary-indigo palette-accent-teal">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Übung 3 - Operatoren &amp; Addons
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion//general" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+        </div>
+      
+      <div class="name">
+        <strong>Datenverarbeitung in der Medienproduktion </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    <span class="section">Allgemeines</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Kursinfo" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/">
+	
+	Kursinfo
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Links &amp; Literatur" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/links/">
+	
+	Links &amp; Literatur
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Python Style Guide" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/python-style-guide/">
+	
+	Python Style Guide
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Vorlesungs Pythonscripts" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/course-python-scripts/">
+	
+	Vorlesungs Pythonscripts
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="1. Blender &amp; Scripting-Tools" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter01/exercise01_a/">
+	
+	1. Blender &amp; Scripting-Tools
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="2. Python &amp; Blender API" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter02/exercise01_a/">
+	
+	2. Python &amp; Blender API
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a class="current" title="3. Operatoren &amp; Addons" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter03/exercise01_a/">
+	
+	3. Operatoren &amp; Addons
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+      
+        
+        
+
+
+
+<a  title="4. Meshgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/">
+	
+	4. Meshgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5. Animation" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter05/exercise01_a/">
+	
+	5. Animation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="6. Assetgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter06/exercise01_a/">
+	
+	6. Assetgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="7. UI" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter07/exercise01_a/">
+	
+	7. UI
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Übung 3 - Operatoren &amp; Addons </h1>
+
+			<p><img src="img/wuerfeldimension.png" alt="Würfeldimension"></p>
+<!--
+**Addon mit UI erstellen um Würfeldimension zu generieren:**
+
+- Set an Türmchenassets generieren
+- Mit Voronoi Diagram (Kollisionsfrei - oder doch Partikelsystem wenn zu kompliziert) auf Fläche verteilen
+- Würfel bis zum Horizont - hübsch rendern (bei Bedarf vorgegebene Szene)
+-->
+<p>Bisher sind alle Funktionalitäten, die wir mit unseren Scripten erstellt haben auch nur als solche ausführbar - als Script im Texteditor. In dieser Übung wollen wir das ändern und Blender selbst um eine Benutzeroberfläche für die Generierung unseres Turms erweitern</p>
+<h2 id="operatoren-hahahugoshortcodes0hbhb">Operatoren <a href="https://docs.blender.org/api/current/bpy.types.Operator.html" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a></h2>
+<p>Wir haben bereits die <code>ops</code> Kategorie des <code>bpy</code> Moduls kennengelernt. Nun wollen wir unseren eigenen Operator schreiben, der dann auch über die API aufgerufen und mit der <code>F3</code>-Suche gefunden werden kann.</p>
+<blockquote class="todo">
+    <ul>
+<li>öffne im Text Editor das <em>&ldquo;Operator Simple&rdquo;</em> Template.
+<img src="img/template.png" alt="Simple Operator Template"></li>
+</ul>
+
+</blockquote>
+<p>Sehen wir uns hier nun ersteinmal die Klasse <code>SimpleOperator an</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="k">class</span> <span class="nc">SimpleOperator</span><span class="p">(</span><span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Operator</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="s2">&#34;&#34;&#34;Tooltip&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="n">bl_idname</span> <span class="o">=</span> <span class="s2">&#34;object.simple_operator&#34;</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    <span class="n">bl_label</span> <span class="o">=</span> <span class="s2">&#34;Simple Object Operator&#34;</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="nd">@classmethod</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="n">active_object</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">        <span class="n">main</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;FINISHED&#39;</span><span class="p">}</span>
+</span></span></code></pre></div><ul>
+<li>Mit der Deklaration <strong><code>class SimpleOperator(bpy.types.Operator)</code></strong> geben wir an, dass unsere Klasse ein Operator ist - also von <code>bpy.types.Operator</code> erbt.</li>
+<li>Darunter können wir mit <strong><code>&quot;&quot;&quot;Mein Tooltipp&quot;&quot;&quot;</code></strong> eine Beschreibung angeben, die dem Nutzer beim überfahren des Operators mit dem Cursor angezeigt wird.</li>
+<li><strong><code>bl_idname</code></strong> ist der pfad API-Pfad unter dem der Operator aufrufbar sein wird <code>&quot;object.simple_operator&quot;</code> lässt sich dann mit <code>bpy.ops.object.simple_operator()</code> aufrufen.</li>
+<li><code>bl_label</code></li>
+</ul>
+<!--Warum ist poll classmethod und execute nicht?-->
+<ul>
+<li>
+<p>Die <strong><code>poll</code></strong> Methode ist optional. Sie ist eine statische Methode (daher <code>@classmethod</code>) und benötigt daher keine Instanz der Klasse, um aufgerufen zu werden. <code>cls</code> ist hier die Referenz auf die sie beinhaltende Klasse selbst (während <code>self</code> immer eine Instanz referenziert). Poll empfängt zudem den aktuellen Kontex</p>
+</li>
+<li>
+<p>Die <strong><code>execute</code></strong> Methode ist der tatsächlich ausgeführte Code beim aufrufen des Operators. Ihr wird hier <code>self</code> übergeben (in Python wird über <code>self.meine_variable</code> auf Membervariablen der aktuellen Klasseninstanz zugegriffen) und wiederum der aktuelle Kontext.</p>
+</li>
+</ul>
+<p>Der ausgeführte Code wurde hier in die <code>main</code> Methode ausgelagert. Diese könnte auch anders heißen und andere Parameter haben. In diesem Beispiel wird über jedes Objekt in der aktuellen Szene <code>context.scene.objects</code> iteriert und dieses in der Konsole ausgegeben. <code>for</code> lässt dich in Python nutzen wie <code>foreach</code> in anderen Sprachen.</p>
+<p>Schließlich fallen noch die beiden Methoden <code>register</code> und <code>unregister</code> auf. Diese sind außerhalb des Klassenrumpfes und dienen zur Registrierung der Klassen in der API bzw zur Deregistrierung bei Deaktivierung des Addons.</p>
+<blockquote class="info">
+    <p>Wenn viele Klassen zu registrieren sind, lässt sich auch die <code>register_classes_factory</code> nutzen, der ein Tuple an Klassen übergeben wird.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">register</span><span class="p">,</span> <span class="n">unregister</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">register_classes_factory</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="p">(</span><span class="n">MeineKlasse1</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="n">MeineKlasse2</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">MeineKlasse3</span><span class="p">,)</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div>
+</blockquote>
+<ul>
+<li>Zu guter Letzt folgen die etwas kryptische Zeilen</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="n">register</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="c1"># test call</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">simple_operator</span><span class="p">()</span>
+</span></span></code></pre></div><p>Die Überprüfung <code>if __name__ == &quot;__main__&quot;</code> überprüft dabei lediglich, ob das Script gerade über den Texteditor gestartet wird oder einfach nur als Modul importiert wurde. Hier kann also Code untergebracht werden, der nicht ausgeführt wird, wenn das Script als Addon installiert wird. In diesem Fall also die Registrierung des Operators in der API und ein Testlauf.</p>
+<blockquote class="todo">
+    <ul>
+<li>Stelle sicher, dass <strong>Preferences → Interface → Developer Extras</strong> aktiviert ist (nur dann lassen sich so erstellte Operatoren mit F3 suchen)</li>
+<li>Führe das Skript <em>Operator Simple</em> im Texteditor aus</li>
+<li>Öffne die Systemkonsole mit <strong>Window → Toggle System Console</strong></li>
+<li>Suche im mit F3 nach <em>Simple Object Operator</em></li>
+</ul>
+<p>In der Systemkonsole wird nun eine Liste der Objekte in der Szene ausgegeben.</p>
+<p style="margin-bottom: -30px; margin-left: 5px;"> <img style="margin-bottom: -3px;" height="20px" src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/blender_icon.png" alt=""> blender.exe</p>
+<pre class="console" style="width: 700px;">
+found bundled python: C:\Blender\daily\blender-2.91.0-7ff6bfd1e0af-windows64\2.91\python
+&lt;bpy_struct, Object("Cube") at 0x000001D2821FC088&gt;
+&lt;bpy_struct, Object("Light") at 0x000001D2821FC608&gt;
+&lt;bpy_struct, Object("Camera") at 0x000001D2821FBB08&gt;>}}
+</pre>
+
+</blockquote>
+<h2 id="properties-hahahugoshortcodes4hbhb">Properties <a href="https://docs.blender.org/api/current/bpy.props.html" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a></h2>
+<p>Die wenigsten Operatoren sind einfach so ohne weitere Angaben ausführbar. Fast alle Operatoren lassen sich in ihrer Funktionalität durch Parameter beeinflussen. In Blender heißen solche Parameter von Operatoren <em>Properties</em>.</p>
+<p>Properties lassen sich ganz einfach als Eigenschaften der Klasse, die den Operator definiert implementieren (also die Klasse, die von <code>bpy.types.Operator</code> erbt und die eine <code>execute</code>-Methode definiert). Hierzu können innerhalb des Klassenrumpfes Eigenschaften definiert werden, denen ein Aufruf einer der folgenden Funktionen zugewiesen wird.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">IntProperty</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">BoolProperty</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl"> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">FloatProperty</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">FloatVectorProperty</span>
+</span></span></code></pre></div><p>Diesem Funktionsaufruf werden dann <code>name</code> (Label des Operators in der GUI), sowie optional eine <code>description</code> und ein <code>default</code> - Wert zugewiesen.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">my_float</span><span class="p">:</span> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">FloatProperty</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">        <span class="n">name</span><span class="o">=</span><span class="s2">&#34;My Float&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">        <span class="n">description</span><span class="o">=</span><span class="s2">&#34;does stuff with the thing.&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">        <span class="n">default</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span>
+</span></span></code></pre></div><blockquote class="info">
+    Es handelt sich hierbei nicht um klassische Variablendeklaration. Wir weisen keinen Wert einer Python-Variablen hinzu, wir sagen Blender nur: &ldquo;Erstelle in deiner internen Datenstruktur eine Float-Variable mit diesem Namen etc.&rdquo;
+</blockquote>
+<pre><code class="language-python">
+import bpy
+
+def main(context, loc):
+    for ob in context.scene.objects:
+        ob.location = loc
+</code></pre>
+<blockquote class="todo">
+    <div class="tcl-row">
+<div class="tcl-column tcl-left" style="width: 50%"><p>Passt das <strong>Operator Simple</strong> Template folgendermaßen an:</p>
+<ul>
+<li>
+<p>Zunächst legen wir in der Operatorklasse eine <code>FloatVectorProperty</code> an und weisen ihr Name, Beschreibung und Defaultwert zu.</p>
+</li>
+<li>
+<p>Nun können wir unsere Property anwenden. Diese sind innerhalb der Klasse über das Schlüsselwort <code>self</code> (ähnlich wie <code>this</code> in anderen Sprachen) aufrufbar. In diesem Beispiel Fügen wir unserer <code>main</code> Methode einen Parameter <code>value</code> hinzu und übergeben bei deren Aufruf in der <code>execute</code> Methode <code>self.my_vector</code>.</p>
+</li>
+<li>
+<p>Damit beim Ausführen des Operators auch etwas passiert, ändern wir in <code>main</code> die Position jedes Objekts zu diesem Wert.</p>
+</li>
+</ul>
+<p>Sind die Properties so der Operatorklasse hinzugefügt, sind sie bei Aufruf des Operators über die Python Konsole bereits einstellbar.</p>
+<ul>
+<li>Führe das Script aus und teste den Operator mit der Python-Konsole:</li>
+</ul>
+<pre tabindex="0"><code>&gt;&gt;&gt; bpy.ops.object.simple_operator(my_vec=(2,2,2))
+</code></pre><p>Alle Objekte in der Szene sollten nun an die Position (2, 2, 2) verschoben werden.</p>
+<p><img src="img/location.png" alt="location"></p>
+</div>
+<div class="tcl-column tcl-right" style="width: 50%"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">bpy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">loc</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="k">for</span> <span class="n">ob</span> <span class="ow">in</span> <span class="n">context</span><span class="o">.</span><span class="n">scene</span><span class="o">.</span><span class="n">objects</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">        <span class="n">ob</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">loc</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="k">class</span> <span class="nc">SimpleOperator</span><span class="p">(</span><span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Operator</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="s2">&#34;&#34;&#34;Tooltip&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="n">bl_idname</span> <span class="o">=</span> <span class="s2">&#34;object.simple_operator&#34;</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="n">bl_label</span> <span class="o">=</span> <span class="s2">&#34;Simple Object Operator&#34;</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">    <span class="n">bl_options</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;REGISTER&#34;</span><span class="p">,</span> <span class="s2">&#34;UNDO&#34;</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">13</span><span class="cl">
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="nd">@classmethod</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">    <span class="k">def</span> <span class="nf">poll</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">16</span><span class="cl">        <span class="k">return</span> <span class="n">context</span><span class="o">.</span><span class="n">active_object</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">
+</span></span><span class="line"><span class="ln">18</span><span class="cl">    <span class="k">def</span> <span class="nf">execute</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">        <span class="n">main</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">my_vec</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;FINISHED&#39;</span><span class="p">}</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">
+</span></span><span class="line"><span class="ln">22</span><span class="cl">    <span class="n">my_vec</span><span class="p">:</span> <span class="n">bpy</span><span class="o">.</span><span class="n">props</span><span class="o">.</span><span class="n">FloatVectorProperty</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">        <span class="n">name</span><span class="o">=</span><span class="s1">&#39;My Vector&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">24</span><span class="cl">        <span class="n">description</span><span class="o">=</span><span class="s1">&#39;does stuff with the thing.&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl">        <span class="n">default</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl">
+</span></span><span class="line"><span class="ln">27</span><span class="cl">
+</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="k">def</span> <span class="nf">register</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">register_class</span><span class="p">(</span><span class="n">SimpleOperator</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">30</span><span class="cl">
+</span></span><span class="line"><span class="ln">31</span><span class="cl"><span class="k">def</span> <span class="nf">unregister</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">unregister_class</span><span class="p">(</span><span class="n">SimpleOperator</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">
+</span></span><span class="line"><span class="ln">34</span><span class="cl">
+</span></span><span class="line"><span class="ln">35</span><span class="cl"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="n">register</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl">
+</span></span><span class="line"><span class="ln">38</span><span class="cl">    <span class="c1"># test call</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">ops</span><span class="o">.</span><span class="n">object</span><span class="o">.</span><span class="n">simple_operator</span><span class="p">()</span>
+</span></span></code></pre></div></div>
+</div>
+<ul>
+<li>Damit Properties nun auch in einem Menü beim Aufruf des Operators eingestellt werden können, müssen wir das Blender in der Operatorklasse mit einer weiteren bl_&hellip; Zeile: <code>bl_options = {&quot;REGISTER&quot;, &quot;UNDO&quot;}</code> sagen.</li>
+<li>Testet den Operator mit dem <code>F3</code> Suchmenü im Viewport</li>
+</ul>
+<p><video autoplay loop src="img/operator.mp4"></video></p>
+
+</blockquote>
+<blockquote class="todo">
+    Wandelt das <a href="../../course-python-scripts/#vl2-turmgenerator">Turmgenerator-Skript</a> vom letzten mal in einen Operator um und macht dessen Parameter zu Operator-Properties.
+</blockquote>
+<h2 id="addons-hahahugoshortcodes8hbhb">Addons <a href="https://docs.blender.org/manual/en/latest/advanced/scripting/addon_tutorial.html" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a></h2>
+<div class="tcl-row">
+<div class="tcl-column tcl-left" style="width: 50%">Nun wollen wir unser Skript als Addon abspeichern, damit es jeder einfach installieren und benutzen kann. Dazu benötigt Blender lediglich ein paar Informationen zum Addon. Diese werden in einem <code>bl_info</code> Dictionary (rechts) angegeben, dass wir ganz oben in unser Skript einfügen. Verpflichtend anzugeben sind dabei nur Name, Author und Kategorie.</div>
+<div class="tcl-column tcl-right" style="width: 50%"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">bl_info</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl">    <span class="s2">&#34;name&#34;</span><span class="p">:</span> <span class="s2">&#34;Cubedimension&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">    <span class="s2">&#34;author&#34;</span><span class="p">:</span> <span class="s2">&#34;Ich &lt;ich@webmail.hs-furtwangen.de&gt;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">    <span class="s2">&#34;version&#34;</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">    <span class="s2">&#34;blender&#34;</span><span class="p">:</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl">    <span class="s2">&#34;location&#34;</span><span class="p">:</span> <span class="s2">&#34;View3D &gt; Search Menu &gt; Cubedimension&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">    <span class="s2">&#34;description&#34;</span><span class="p">:</span> <span class="s2">&#34;Creates a cool Cube Dimension&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="s2">&#34;warning&#34;</span><span class="p">:</span> <span class="s2">&#34;Nur ausfüllen falls es etwas zu warnen gibt&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    <span class="s2">&#34;doc_url&#34;</span><span class="p">:</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="s2">&#34;category&#34;</span><span class="p">:</span> <span class="s2">&#34;Add Mesh&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div></div>
+</div>
+<!--Dunkle Markdown-CSS Magie-->
+<p class="tabletitle"><b>Nicht selbsterklärende Parameter von bl_info</b></p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>version</code></td>
+<td>gibt die (frei wählbare) Versionsnummer des Addons an.</td>
+</tr>
+<tr>
+<td><code>blender</code></td>
+<td>ist die Blender Version, mit der das Addon getestet wurde (was nicht heißt, dass es nicht auch in anderen Versionen funktionieren kann)</td>
+</tr>
+<tr>
+<td><code>location</code></td>
+<td>zeigt den Weg zur UI des Addons (nur als Anleitung für den Nutzer)</td>
+</tr>
+<tr>
+<td><code>doc_url</code></td>
+<td>Link zur Dokumentation, falls diese existiert (was meist wünschenswert ist)</td>
+</tr>
+<tr>
+<td><code>category</code></td>
+<td>Gibt die Kategorie unter der das Addon in den Einstellungen angezeigt wird</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="todo">
+    Wandelt das Turmgenerator-Skript nun in ein Addon um und installiert es. Auch die Deinstallation sollte reibungslos klappen.
+</blockquote>
+<h2 id="ressourcen--tutorials-zum-thema">Ressourcen &amp; Tutorials zum Thema</h2>
+<table>
+<thead>
+<tr>
+<th>Art/Länge</th>
+<th>Titel</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/video.png" class="resicon">  22min</td>
+<td><a href="https://youtu.be/xscQ9tcN4GI?list=PLa1F2ddGya_8acrgoQr1fTeIuQtkSd6BW">Your Own Operator - Scripting for Artists [8]</a></td>
+<td>Operators</td>
+<td><a href="https://cloud.blender.org/welcome">Blender Cloud</a> - <a href="https://stuvel.eu/">Dr. Sybren A. Stüvel</a></td>
+</tr>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/video.png" class="resicon">  10min</td>
+<td><a href="https://youtu.be/nKt6CtMH0no?list=PLa1F2ddGya_8acrgoQr1fTeIuQtkSd6BW">From Script to Add-on - Scripting for Artists [9]</a></td>
+<td>Operators</td>
+<td><a href="https://cloud.blender.org/welcome">Blender Cloud</a> - <a href="https://stuvel.eu/">Dr. Sybren A. Stüvel</a></td>
+</tr>
+</tbody>
+</table>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/" title="Übung 4 - Meshgenerierung">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Übung 4 - Meshgenerierung
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter02/exercise01_a/" title="Übung 2 - Blender API &amp; Visual Studio Code">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Übung 2 - Blender API &amp; Visual Studio Code
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
+

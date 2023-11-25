@@ -1,0 +1,199 @@
+.toc ul a {
+    padding-top: 0px !important;
+    padding-bottom: 12px !important;
+}
+
+.project {
+    height: 90px;
+}
+
+.footer {
+    display: none !important;
+}
+
+.section {
+    padding-top: 16px !important;
+    padding-bottom: 10px !important;
+}
+
+.hljs {
+    border: #c3c3c3 solid 1px;
+    border-radius: 3px;
+    padding: 2px 4px !important;
+}
+
+pre {
+    background: none !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.resicon {
+    float: left;
+    margin-right: 8px;
+    filter: invert();
+    mix-blend-mode: lighten;
+
+}
+
+.doclink img {
+    position: relative;
+    /* Adjust these values accordingly */
+    top: 5px;
+    width: 28px;
+}
+
+.anchor .doclink {
+    display: none !important;
+}
+
+.counter {
+    color: #000;
+    font-weight: bold;
+    background-color: rgb(0, 191, 197);
+    border: rgb(0, 191, 197) solid 5px;
+    border-radius: 7px;
+    margin: 0px 3px !important;
+}
+
+
+.tcl-column {
+    float: left;
+    height: auto;
+}
+
+.tcl-column image, video {
+    max-width: 100%;
+}
+
+.tcl-left {
+    padding-right: 10px;
+}
+
+.tcl-right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .tcl-column {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+/* Clear floats after the columns */
+
+.tcl-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.video_example {
+    display: inline-block;
+    background: rgb(195, 243, 206);
+    width: 430px;
+    height: 330px;
+    margin: 5px;
+    margin-bottom: 20px;
+}
+
+.video_example_player {
+    width: 430px;
+}
+
+.video_example_label {
+    padding: 3px 5px;
+    height: 145px;
+    overflow: hidden;
+    bottom: 10px;
+}
+
+.tabletitle {
+    color: white;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: -65px;
+    z-index: 2000 !important;
+    position: flex;
+}
+
+.show,
+.hide {
+    padding: 4px;
+    text-decoration: none !important;
+    border-radius: 3px;
+    color: white !important;
+}
+
+.show {
+    background-color: rgb(82, 182, 182);
+}
+
+.hide {
+    background-color: teal;
+}
+
+
+@supports (-webkit-appearance:none) {
+    .palette-primary-indigo {
+        background: #252b50 !important
+    }
+}
+
+.palette-primary-indigo .footer,
+.palette-primary-indigo .header {
+    background: #3c3e4b;
+}
+
+.palette-primary-indigo .drawer .toc a.current,
+.palette-primary-indigo .drawer .toc a:focus,
+.palette-primary-indigo .drawer .toc a:hover {
+    color: #606af3
+}
+
+.palette-primary-indigo .drawer .anchor a {
+    border-left: 2px solid #252b50
+}
+
+.ios.standalone .palette-primary-indigo .article {
+    background: -webkit-linear-gradient(top, #fff 50%, #252b50 0);
+    background: linear-gradient(180deg, #fff 50%, #252b50 0)
+}
+
+.palette-primary-indigo .article a,
+.palette-primary-indigo .article code,
+.palette-primary-indigo .article h1,
+.palette-primary-indigo .article h2 {
+    color: #ced5f3
+}
+
+.palette-primary-indigo .article .headerlink {
+    color: rgba(0, 0, 0, .26)
+}
+
+.palette-primary-indigo .article table th {
+    background: #394171
+}
+
+.palette-primary-indigo .results .meta {
+    background: #252b50
+}
+
+.article {
+    background-color: #2e3236;
+}
+
+tbody {
+    background-color: #363b40;
+}
+
+@media only screen and (max-width: 959px) {
+
+    .drawer .project {
+        background-color: #3c3e4b;
+    }
+}

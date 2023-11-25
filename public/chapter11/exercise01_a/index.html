@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="de">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Übung 11 - Animation - Datenverarbeitung in der Medienproduktion</title>
+
+    
+    <meta name="description" content="Online-Material zur Veranstaltung Datenverarbeitung in der Medienproduktion.">
+    
+    <link rel="canonical" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter11/exercise01_a/">
+    
+
+    <meta property="og:url" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter11/exercise01_a/">
+    <meta property="og:title" content="Datenverarbeitung in der Medienproduktion">
+    <meta property="og:image" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+    <meta name="apple-mobile-web-app-title" content="Datenverarbeitung in der Medienproduktion">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+    <link rel="icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot');
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.woff')
+               format('woff'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.ttf')
+               format('truetype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/application.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/custom.css">
+    
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/modernizr.js"></script>
+
+
+  </head>
+  <body class="palette-primary-indigo palette-accent-teal">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Übung 11 - Animation
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion//general" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+        </div>
+      
+      <div class="name">
+        <strong>Datenverarbeitung in der Medienproduktion </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    <span class="section">Allgemeines</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Kursinfo" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/">
+	
+	Kursinfo
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Links &amp; Literatur" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/links/">
+	
+	Links &amp; Literatur
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Python Style Guide" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/python-style-guide/">
+	
+	Python Style Guide
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Vorlesungs Pythonscripts" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/course-python-scripts/">
+	
+	Vorlesungs Pythonscripts
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="1. Blender &amp; Scripting-Tools" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter01/exercise01_a/">
+	
+	1. Blender &amp; Scripting-Tools
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="2. Python &amp; Blender API" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter02/exercise01_a/">
+	
+	2. Python &amp; Blender API
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3. Operatoren &amp; Addons" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter03/exercise01_a/">
+	
+	3. Operatoren &amp; Addons
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4. Meshgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/">
+	
+	4. Meshgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5. Animation" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter05/exercise01_a/">
+	
+	5. Animation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="6. Assetgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter06/exercise01_a/">
+	
+	6. Assetgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="7. UI" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter07/exercise01_a/">
+	
+	7. UI
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Übung 11 - Animation </h1>
+
+			<p>Zur Generierung von Animationen stellt uns die Blender API verschiedene Möglichkeiten zur Verfügung. In folgender Übung werden wir uns die wichtigsten hiervon ansehen.</p>
+<ul>
+<li>Keyframes</li>
+<li>Driver
+<ul>
+<li>Scripted Expressions</li>
+<li>Custom Drivers</li>
+</ul>
+</li>
+<li>App Handlers</li>
+</ul>
+<h2 id="keyframes">Keyframes</h2>
+<p>Wir können die Blender API nutzen um per Script Keyframes zu setzen. Dafür wird die Methode <code>keyframe_insert</code> <a href="https://docs.blender.org/api/current/bpy.types.bpy_struct.html#bpy.types.bpy_struct.keyframe_insert" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a> verwendet. Diese kann zum Beispiel von Objekten aus aufgerufen werden. Deren wichtigste Parameter sind <code>data_path</code> (Pfad zum Wert, der verwendet werden soll) und <code>frame</code> (Framenummer des Keyframes).</p>
+<p>Hier setzen wir beispielsweise auf unserem Würfel zunächst einen Location-Keyframe an Frame 0, verschieben den Würfel dann nach (0, 5, 0) und setzen dann einen Keyframe bei Frame 20.</p>
+<div class="tcl-row">
+<div class="tcl-column tcl-left" style="width: 50%"><pre tabindex="0"><code>import bpy
+
+cube = bpy.data.objects[&#39;Cube&#39;]
+
+cube.keyframe_insert(data_path=&#34;location&#34;, frame=1)
+
+cube.location = (0, 5, 0)
+
+cube.keyframe_insert(data_path=&#34;location&#34;, frame=20)
+</code></pre></div>
+<div class="tcl-column tcl-right" style="width: 50%"><video autoplay loop width=350 src="img/keyframes.mp4"></video></div>
+</div>
+<blockquote class="todo">
+    <p>Schreibt ein Script, welches eine Kugel alle Objekte innerhalb einer Collection <em>points</em> abfliegen lässt. Es soll so aussehen, als spränge die Kugel von Punkt zu Punkt.</p>
+<p><img src="img/pointjumper_outliner.png" alt="outliner"></p>
+<p><video autoplay loop src="img/pointjumper.mp4"></video></p>
+
+</blockquote>
+<p><strong>Lösung</strong></p>
+<p>Um zu beginnen suchen wir unsere benötigten Objekte und legen fest, wie lange die Kugel für die Strecke zwischen zwei Punkten brauchen soll:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">bpy</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">points</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="s1">&#39;points&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">objects</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">sphere</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">objects</span><span class="p">[</span><span class="s1">&#39;Sphere&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="n">FRAMES_PER_POINT</span> <span class="o">=</span> <span class="mi">20</span>
+</span></span></code></pre></div><p>Nun iterieren wir über alle Objekte in <code>points</code> und setzen jeweils die Kugel an die Position des aktuellen Objekts. Dann setzen wir einen Keyframe an die Stelle <code>FRAMES_PER_POINT * i</code></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">points</span><span class="p">)):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">FRAMES_PER_POINT</span> <span class="o">*</span> <span class="n">i</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>So fliegt der Ball nun schon zwischen den Punkten umher. Als nächstes soll er mit konstanter Geschwindgkeit fliegen - also muss der zeitliche Abstand des Keyframes an jedem Punkt jeweils abhängig von der Distanz zum letzten Punkt sein.</li>
+<li>Zuerst nutzen wir den Satz des Pythagoras, um die die Distanz zwischen zwei Punkten zu errechnen.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">get_distance</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Innerhal der Punkte-Schleife berechnen wir dann jeweils die Distanz zum vorherigen Punkt.</li>
+<li>Um uns eine If-Abfrage zu sparen, lagern wir den Keyframe für den ersten Punkt (der keinen vorherigen Punkt hat) aus.</li>
+<li>Zudem brauchen wir noch eine Variable <code>current_frame</code>, an dessen Stelle der Keyframe gesetzt wird</li>
+<li><code>FRAMES_PER_POINT</code> haben wir umbenannt in <code>FRAMES_PER_UNIT</code>, da diese nun mit der Distanz multipliziert wird, um <code>current_frame</code> zu berechnen</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">location</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="n">current_frame</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">points</span><span class="p">)):</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl">    
+</span></span><span class="line"><span class="ln">10</span><span class="cl">    <span class="n">distance_to_last_point</span> <span class="o">=</span> <span class="n">get_distance</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">11</span><span class="cl">    <span class="n">current_frame</span> <span class="o">+=</span> <span class="n">distance_to_last_point</span> <span class="o">*</span> <span class="n">FRAMES_PER_UNIT</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl">
+</span></span><span class="line"><span class="ln">13</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">current_frame</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">        
+</span></span></code></pre></div><ul>
+<li>Nun wollen wir, dass der Ball Bögen zwischen den Punkten fliegt. Dazu müssen wir zwischen aufeinanderfolgenden Punkten den Punkt in deren Mitte berechnen und nach oben verschieben.</li>
+<li>Wie weit der Punkt nach oben versetzt wird, soll ebenfalls von der Distanz zum letzten Punkt und einer Variable <code>JUMP_HEIGHT</code> abhängen.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">intermediate_point</span> <span class="o">=</span> <span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">location</span> <span class="o">+</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="n">intermediate_point</span><span class="o">.</span><span class="n">z</span> <span class="o">+=</span> <span class="n">distance_to_last_point</span> <span class="o">*</span> <span class="n">JUMP_HEIGHT</span>
+</span></span></code></pre></div><p><em>final script</em></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="kn">import</span> <span class="nn">bpy</span>
+</span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="kn">import</span> <span class="nn">mathutils</span>
+</span></span><span class="line"><span class="ln"> 4</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="n">SPEED</span> <span class="o">=</span> <span class="mf">1.5</span>
+</span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="n">JUMP_HEIGHT</span> <span class="o">=</span> <span class="mf">0.7</span>
+</span></span><span class="line"><span class="ln"> 7</span><span class="cl">
+</span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="n">points</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">collections</span><span class="p">[</span><span class="s1">&#39;points&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">objects</span>
+</span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="n">sphere</span> <span class="o">=</span> <span class="n">bpy</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">objects</span><span class="p">[</span><span class="s1">&#39;Sphere&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="ln">10</span><span class="cl">
+</span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="n">at_frame</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="ln">12</span><span class="cl"> 
+</span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="k">def</span> <span class="nf">get_distance</span><span class="p">(</span><span class="n">p1</span><span class="p">,</span> <span class="n">p2</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">14</span><span class="cl">    <span class="k">return</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">((</span><span class="n">p1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">p1</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">p2</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">15</span><span class="cl">
+</span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="k">def</span> <span class="nf">set_handle_types</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">17</span><span class="cl">    <span class="k">for</span> <span class="n">c_fcurve</span> <span class="ow">in</span> <span class="n">sphere</span><span class="o">.</span><span class="n">animation_data</span><span class="o">.</span><span class="n">action</span><span class="o">.</span><span class="n">fcurves</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">18</span><span class="cl">        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">c_keyframe</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">c_fcurve</span><span class="o">.</span><span class="n">keyframe_points</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">19</span><span class="cl">            <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="ln">20</span><span class="cl">                <span class="n">c_keyframe</span><span class="o">.</span><span class="n">handle_left_type</span> <span class="o">=</span> <span class="s2">&#34;VECTOR&#34;</span>
+</span></span><span class="line"><span class="ln">21</span><span class="cl">                <span class="n">c_keyframe</span><span class="o">.</span><span class="n">handle_right_type</span> <span class="o">=</span> <span class="s2">&#34;VECTOR&#34;</span>
+</span></span><span class="line"><span class="ln">22</span><span class="cl">        <span class="n">c_fcurve</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">23</span><span class="cl">
+</span></span><span class="line"><span class="ln">24</span><span class="cl"><span class="c1"># Initial Keyframe</span>
+</span></span><span class="line"><span class="ln">25</span><span class="cl"><span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">location</span>
+</span></span><span class="line"><span class="ln">26</span><span class="cl"><span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">27</span><span class="cl">
+</span></span><span class="line"><span class="ln">28</span><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">points</span><span class="p">)):</span>
+</span></span><span class="line"><span class="ln">29</span><span class="cl">    
+</span></span><span class="line"><span class="ln">30</span><span class="cl">    <span class="n">distance_to_next_point</span> <span class="o">=</span> <span class="n">get_distance</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">,</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">31</span><span class="cl">
+</span></span><span class="line"><span class="ln">32</span><span class="cl">    <span class="n">keyframe_loc</span> <span class="o">=</span> <span class="n">at_frame</span> <span class="o">+</span> <span class="n">distance_to_next_point</span> <span class="o">*</span> <span class="n">SPEED</span>
+</span></span><span class="line"><span class="ln">33</span><span class="cl">    <span class="n">at_frame</span> <span class="o">=</span> <span class="n">keyframe_loc</span>
+</span></span><span class="line"><span class="ln">34</span><span class="cl">    
+</span></span><span class="line"><span class="ln">35</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span>
+</span></span><span class="line"><span class="ln">36</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">keyframe_loc</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">37</span><span class="cl">    
+</span></span><span class="line"><span class="ln">38</span><span class="cl">    <span class="c1"># Mittelpunkt zwischen 1-1 und 1 berechnen</span>
+</span></span><span class="line"><span class="ln">39</span><span class="cl">    <span class="n">intermediate_point</span> <span class="o">=</span> <span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">location</span> <span class="o">+</span> <span class="n">points</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">location</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="ln">40</span><span class="cl">    <span class="n">intermediate_point</span><span class="o">.</span><span class="n">z</span> <span class="o">+=</span> <span class="n">distance_to_next_point</span> <span class="o">*</span> <span class="n">JUMP_HEIGHT</span>
+</span></span><span class="line"><span class="ln">41</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">location</span> <span class="o">=</span> <span class="n">intermediate_point</span>
+</span></span><span class="line"><span class="ln">42</span><span class="cl">
+</span></span><span class="line"><span class="ln">43</span><span class="cl">    <span class="n">intermediate_keyframe_loc</span> <span class="o">=</span> <span class="n">at_frame</span> <span class="o">-</span> <span class="n">distance_to_next_point</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">SPEED</span>  
+</span></span><span class="line"><span class="ln">44</span><span class="cl">    <span class="n">sphere</span><span class="o">.</span><span class="n">keyframe_insert</span><span class="p">(</span><span class="n">data_path</span><span class="o">=</span><span class="s2">&#34;location&#34;</span><span class="p">,</span> <span class="n">frame</span><span class="o">=</span><span class="n">intermediate_keyframe_loc</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">45</span><span class="cl">    
+</span></span><span class="line"><span class="ln">46</span><span class="cl">    <span class="n">set_handle_types</span><span class="p">()</span>
+</span></span></code></pre></div><h2 id="driver">Driver</h2>
+<p>Driver geben uns die Möglichkeit, Abhängigkeiten von Variablen verschiedener Objekte definieren. Fast jeder Variable in Blender kann mit <code>RMB</code> → <em>Add Driver</em> ein Driver hinzugefügt werden. Im Nun erscheinenden Fenster können dem Driver Input-Variablen anderer Objekte hinzugefügt werden, die dann in einer Expression verwendet werden können, die den Wert bestimmt, den unsere Variable erhalten soll.</p>
+<p><img src="img/kurbel.png" alt="kurbel"></p>
+<p>In diesem Beispiel verwenden wir für die Y-Location unseres Würfels die Z-Rotation des Kurbel-Objekts und nennen sie <code>kurbel_rot_z</code> <span class="counter">1</span>. In der Expression multiplizieren wir deren Wert dann mit 0.5 <span class="counter">2</span>. Nun können wir durch Rotation der Kurbel unseren Würfel kontrollieren.</p>
+<p><video autoplay loop src="img/kurbel.mp4"></video></p>
+<h3 id="kurven">Kurven</h3>
+<p>Zudem kann der <em>Driver Editor</em> geöffnet werden (Rechtsklick auf Variable). Hier kann zusätzlich die Kurve angepasst werden, anhand der unser Driver die Variablen miteinander verknüpft. Das Ergebnis der Expression wird hierbei mit dem Wert der Kurve am jeweiligen Punkt multipliziert.</p>
+<p><img src="img/curves.png" alt="kurbel"></p>
+<p>In diesem Beispiel bedeutet das, dass der Würfel sich bis einer Rotation von 1 * 0.5 Radianten der Kurbel zum Punkt 1.0 auf der Y-Achse bewegt und sich dann wieder zurück auf 0 bewegt.</p>
+<p><video autoplay loop src="img/bezier.mp4"></video></p>
+<blockquote class="todo">
+    TODO
+</blockquote>
+<h3 id="custom-drivers">Custom Drivers</h3>
+<p>Um nun den Bogen zum Scripting zu schlagen, können wir auch Python-Funktionen als Driver definieren. Ein sehr einfaches Beispiel sieht folgendermaßen aus:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="kn">import</span> <span class="nn">bpy</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="k">def</span> <span class="nf">my_driver</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="n">v2</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">   <span class="s2">&#34;&#34;&#34;Returns the square of the given value&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">   <span class="k">return</span> <span class="n">v2</span> <span class="o">*</span> <span class="n">v2</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="n">bpy</span><span class="o">.</span><span class="n">app</span><span class="o">.</span><span class="n">driver_namespace</span><span class="p">[</span><span class="s1">&#39;my_driver&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">my_driver</span>
+</span></span></code></pre></div><p>Zunächst definieren wir eine Funktion, welche beliebig viele Variablen entgegennimmt und einen Wert ausgibt. Dann fügen wir unsere Funktion dem <code>driver_namespace</code> hinzu. Nach Ausführung des Scripts können wir nun die Funktion <code>my_driver</code> in der Expression eines Drivers verwenden.</p>
+<p><img src="img/my_driver.png" alt="kurbel"></p>
+<blockquote class="info">
+    Custom Drivers sind zwar mächtig, sollten jedoch eher sparsam eingesetzt werden. Da in einer Animation die Funktion jeden Frame ausgeführt werden muss und Python recht langsam ist, kann die Performance hier schnell einbrechen.
+</blockquote>
+<blockquote class="todo">
+    TODO
+</blockquote>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter02/exercise01_a/" title="Übung 2 - Blender API &amp; Visual Studio Code">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Übung 2 - Blender API &amp; Visual Studio Code
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter01/exercise01_a/" title="Übung 1 - Blender Setup &amp; Scripting-Tools">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Übung 1 - Blender Setup &amp; Scripting-Tools
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
+

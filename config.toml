@@ -1,0 +1,134 @@
+baseurl = "https://simonstorlschulke.github.io/cg-mib/"
+languageCode = "de"
+title = "Computergrafik MIB"
+theme = "material-docs"
+metadataformat = "yaml"
+canonifyurls = true
+home = "general/"
+
+# Enable Google Analytics by entering your tracking id
+googleAnalytics = ""
+
+[params]
+	# General information
+	description = "Online-Material zur Veranstaltung Computergrafik MIB."
+
+	logo = "images/lecture_logo_dvmp.png"
+	favicon = "images/lecture_icon.png"
+
+	permalink = "#"
+
+	# Custom assets
+	custom_css = ["stylesheets/custom.css"]
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "indigo"
+    	accent  = "teal"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+
+[[menu.main]]
+	name   = "Allgemeines"
+
+[[menu.main]]
+	name   = "Kursinfo"
+	url    = "general/"
+	parent = "Allgemeines"
+
+[[menu.main]]
+	name   = "Links & Literatur"
+	url    = "links/"
+	parent = "Allgemeines"
+
+[[menu.main]]
+	name   = "Vorlesungs Pythonscripts"
+	url    = "course-python-scripts/"
+	parent = "Allgemeines"
+
+[[menu.main]]
+	name   = "Kapitel"
+
+[[menu.main]]
+	weight = 1
+	name   = "1. Blender & Scripting-Tools"
+	url    = "chapter01/exercise01_a/"
+	parent = "Kapitel"
+
+[[menu.main]]
+	weight = 2
+	name   = "2. Python & Blender API"
+	url    = "chapter02/exercise01_a/"
+	parent = "Kapitel"
+
+[[menu.main]]
+	weight = 3
+	name   = "3. Operatoren & Addons"
+	url    = "chapter03/exercise01_a/"
+	parent = "Kapitel"
+
+ [[menu.main]]
+ 	weight = 4
+ 	name   = "4. Meshgenerierung"
+ 	url    = "chapter04/exercise01_a/"
+ 	parent = "Kapitel"
+
+ [[menu.main]]
+ 	weight = 5
+ 	name   = "5. Animation"
+ 	url    = "chapter05/exercise01_a/"
+ 	parent = "Kapitel"
+
+ [[menu.main]]
+ 	weight = 6
+ 	name   = "6. Assetgenerierung"
+ 	url    = "chapter06/exercise01_a/"
+ 	parent = "Kapitel"
+
+ [[menu.main]]
+ 	weight = 7
+ 	name   = "7. UI"
+ 	url    = "chapter07/exercise01_a/"
+ 	parent = "Kapitel"
+
+# [[menu.main]]
+# 	weight = 11
+# 	name   = "11. Animation"
+# 	url    = "chapter11/exercise01_a/"
+# 	parent = "Kapitel"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+	[markup.highlight]
+		anchorLineNos = false
+		codeFences = true
+		guessSyntax = false
+		hl_Lines = ""
+		lineAnchors = ""
+		lineNoStart = 1
+		lineNos = true
+		lineNumbersInTable = false
+		noClasses = false
+		tabWidth = 4
