@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="de">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Übung 7 - User Interfaces - Datenverarbeitung in der Medienproduktion</title>
+
+    
+    <meta name="description" content="Online-Material zur Veranstaltung Datenverarbeitung in der Medienproduktion.">
+    
+    <link rel="canonical" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter07/exercise01_a/">
+    
+
+    <meta property="og:url" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter07/exercise01_a/">
+    <meta property="og:title" content="Datenverarbeitung in der Medienproduktion">
+    <meta property="og:image" content="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+    <meta name="apple-mobile-web-app-title" content="Datenverarbeitung in der Medienproduktion">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+    <link rel="icon" type="image/x-icon" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_icon.png">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot');
+        src: url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.woff')
+               format('woff'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.ttf')
+               format('truetype'),
+             url('https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/application.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/stylesheets/custom.css">
+    
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/modernizr.js"></script>
+
+
+  </head>
+  <body class="palette-primary-indigo palette-accent-teal">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Übung 7 - User Interfaces
+      </div>
+    </div>
+
+    
+
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion//general" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/lecture_logo_dvmp.png">
+        </div>
+      
+      <div class="name">
+        <strong>Datenverarbeitung in der Medienproduktion </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    <span class="section">Allgemeines</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="Kursinfo" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/">
+	
+	Kursinfo
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Links &amp; Literatur" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/links/">
+	
+	Links &amp; Literatur
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Python Style Guide" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/python-style-guide/">
+	
+	Python Style Guide
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="Vorlesungs Pythonscripts" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/course-python-scripts/">
+	
+	Vorlesungs Pythonscripts
+</a>
+
+
+
+      
+    </ul>
+  
+</li>
+
+
+
+<li>
+  
+    <span class="section">Kapitel</span>
+    <ul>
+      
+        
+        
+
+
+
+<a  title="1. Blender &amp; Scripting-Tools" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter01/exercise01_a/">
+	
+	1. Blender &amp; Scripting-Tools
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="2. Python &amp; Blender API" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter02/exercise01_a/">
+	
+	2. Python &amp; Blender API
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="3. Operatoren &amp; Addons" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter03/exercise01_a/">
+	
+	3. Operatoren &amp; Addons
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="4. Meshgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/">
+	
+	4. Meshgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="5. Animation" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter05/exercise01_a/">
+	
+	5. Animation
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a  title="6. Assetgenerierung" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter06/exercise01_a/">
+	
+	6. Assetgenerierung
+</a>
+
+
+
+      
+        
+        
+
+
+
+<a class="current" title="7. UI" href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter07/exercise01_a/">
+	
+	7. UI
+</a>
+
+
+<ul id="scrollspy">
+</ul>
+
+
+      
+    </ul>
+  
+</li>
+
+
+        </ul>
+        
+
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>Übung 7 - User Interfaces </h1>
+
+			<p><strong>In Übung 3 haben wir uns schon mit der Erstellung von Operatoren beschäftigt und damit auch die ersten Schritte in Richtung GUI gemacht. In dieser Übung wollen wir unser eigenes Panel bauen und Operatoren zu Menüs hinzufügen.</strong></p>
+<blockquote class="todo">
+    <ul>
+<li>Wir fangen damit an, unser <a href="../../course-python-scripts/#vl4-meshgenerierung---gra%C3%9Fb%C3%BCschel">Skript aus Übung 4</a> zum Generieren von Graßhalmen in einen Operator innerhalb eines Addons umzuwandeln. Seht euch dazu nocheinmal Übung 3 an.</li>
+<li>Wir wandeln wir die Konstanten (BLADES, HEIGHT, ANGLE_BASE&hellip;.) oben in die einsprechenden <a href="../../chapter03/exercise01_a/#properties-hahahugoshortcode-s4-hbhb">Properties</a> um und transferieren den Code in die <code>execute</code> Methode des Operators.</li>
+<li>Fügt schließlich die <a href="../../chapter03/exercise01_a/#addons-hahahugoshortcode-s8-hbhb"><code>bl_info</code></a> Felder und die <code>register</code> und <code>unregister</code> funktionen hinzu.</li>
+</ul>
+
+</blockquote>
+<h2 id="panel-klasse-hahahugoshortcodes1hbhb">Panel-Klasse <a href="https://docs.blender.org/api/current/bpy.types.Panel.html?highlight=panel" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a></h2>
+<p>Nun brauchen wir ein Panel, von dem aus wir unseren Operator aufrufen wollen. Öffnet dazu zunächst in Blender das Script Template &ldquo;UI Panel&rdquo;. Dieses zeichnet im Properties Editor → Scene ein Panel.</p>
+<p>Hier fällt uns nun einiges auf:</p>
+<ul>
+<li>Wie auch Operatoren, werden UI Elemente auch in einer Klasse definiert, die von <code>bpy.types.Panel</code> erbt und über die <code>register</code> und <code>unregister</code> Funktionen registriert.</li>
+<li>über überschreibbaren Klassenmember werden weitere Infos angegeben:</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">class</span> <span class="nc">LayoutDemoPanel</span><span class="p">(</span><span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">Panel</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="s2">&#34;&#34;&#34;Creates a Panel in the scene context of the properties editor&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="n">bl_label</span> <span class="o">=</span> <span class="s2">&#34;Layout Demo&#34;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">    <span class="n">bl_idname</span> <span class="o">=</span> <span class="s2">&#34;SCENE_PT_layout&#34;</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">    <span class="n">bl_space_type</span> <span class="o">=</span> <span class="s1">&#39;PROPERTIES&#39;</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">    <span class="n">bl_region_type</span> <span class="o">=</span> <span class="s1">&#39;WINDOW&#39;</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="n">bl_context</span> <span class="o">=</span> <span class="s2">&#34;scene&#34;</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bl_label</td>
+<td>Label des Panels</td>
+</tr>
+<tr>
+<td>bl_idname</td>
+<td>Name für den Zugriff über bpy</td>
+</tr>
+<tr>
+<td>bl_space_type</td>
+<td>In Welchem Editortyp ist das Panel (Liste aller typen hier: <a href="https://docs.blender.org/api/current/bpy.types.Space.html#bpy.types.Space.type" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a>)</td>
+</tr>
+<tr>
+<td>bl_region_type</td>
+<td>in welchem Bereich der UI dieses Editors</td>
+</tr>
+<tr>
+<td>bl_category (nicht hier)</td>
+<td>In welchem Tab erscheint das Panel</td>
+</tr>
+<tr>
+<td>bl_context</td>
+<td>In welchem Kontext erscheint das Panel (im Beispiel des Properties Editor: Tab))</td>
+</tr>
+</tbody>
+</table>
+<p><img src="img/panel.png" alt="Panel"></p>
+<h2 id="draw--layout"><code>draw</code> &amp; <code>layout</code></h2>
+<ul>
+<li>Statt der execute Methode gibt es hier nun eine <code>draw</code> Methode, die das Panel an den oben angegebenen Ort zeichnet.</li>
+<li>Das geschieht über das <code>self.layout</code><a href="https://docs.blender.org/api/current/bpy.types.UILayout.html" target="_blank" class="doclink"><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/images/to_doc.png" title="zur Dokumentation"></a> des Panels.</li>
+<li>in diesem Beispiel wird zunächst ein Label erstellt, dann eine Zeile (<code>row</code>)</li>
+<li>Der Zeile werden dann zwei Properties hinzugefügt. Dabei handelt es sich um in der API bereits existierende Properties der <code>scene</code> - <code>frame_end</code> und <code>frame_start</code> (diese sind ansonsten in der Timeline als <em>Start</em> und <em>End</em> dargestellt)</li>
+</ul>
+<blockquote class="info">
+    Oft ist es hilfreich, den Quellcode existierender UI Elemente anzuzeigen (RMB → Edit Source), um herauszufinden, wie die UI aufgebaut ist.
+</blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">layout</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">layout</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">scene</span> <span class="o">=</span> <span class="n">context</span><span class="o">.</span><span class="n">scene</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">layout</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&#34; Simple Row:&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">6</span><span class="cl">
+</span></span><span class="line"><span class="ln">7</span><span class="cl"><span class="n">row</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">row</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl"><span class="n">row</span><span class="o">.</span><span class="n">prop</span><span class="p">(</span><span class="n">scene</span><span class="p">,</span> <span class="s2">&#34;frame_start&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">9</span><span class="cl"><span class="n">row</span><span class="o">.</span><span class="n">prop</span><span class="p">(</span><span class="n">scene</span><span class="p">,</span> <span class="s2">&#34;frame_end&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Wenn der Zeile der Parameter <code>align=True</code> übergeben wird, werden die Properties darin direkt nebeneinander dargestellt.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">row</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">row</span><span class="p">(</span><span class="n">align</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Auch Spalten sind möglich, denen dann wie zuvor der row Elemente hinzugefügt werden können</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">split</span> <span class="o">=</span> <span class="n">layout</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">
+</span></span><span class="line"><span class="ln">3</span><span class="cl"><span class="n">col</span> <span class="o">=</span> <span class="n">split</span><span class="o">.</span><span class="n">column</span><span class="p">()</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="n">col</span><span class="o">.</span><span class="n">label</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&#34;Column One:&#34;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>UI Elementen können auch Icons gegeben werden: <code>layout.label(text=&quot;My Label&quot;, icon=&quot;QUESTION&quot;)</code></li>
+<li>Die Namen der Icons lassen sich einfach herausfinden, indem das vorinstallierte Addon &ldquo;Icon Viewer&rdquo; installiert wird. Dann erscheint dazu ein Button oben in der <em>Python Console</em></li>
+</ul>
+<p><img src="img/icon_viewer.png" alt="icon viewer"></p>
+<h2 id="operatoraufruf">Operatoraufruf</h2>
+<ul>
+<li>Operatoren können dem Layout direkt, reihen oder spalten über deren Methode <code>operator</code> hinzugefügt werden. Dazu müssen wir lediglich den Pfad (<code>bl_idname</code>) des Operators übergeben.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">myrow</span><span class="o">.</span><span class="n">operator</span><span class="p">(</span><span class="s1">&#39;mesh.add_grassblade&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Add Grassblades&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;OUTLINER_OB_HAIR&#39;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>Um den Operator in der UI mit angepassten Default-Werten aufzurufen, kann der Operatorbutton auch in einer Variable gespeichert werden, deren Properties dann angepasst werden.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">op_grass</span> <span class="o">=</span> <span class="n">myrow</span><span class="o">.</span><span class="n">operator</span><span class="p">(</span><span class="s1">&#39;mesh.add_grassblade&#39;</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">  <span class="n">text</span><span class="o">=</span><span class="s1">&#39;Add many Grassblades&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">  <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;OUTLINER_OB_HAIR&#39;</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl"><span class="n">op_grass</span><span class="o">.</span><span class="n">BLADES</span> <span class="o">=</span> <span class="mi">30</span>
+</span></span></code></pre></div><h3 id="operator-presets">Operator Presets</h3>
+<p>Ein Preset Panel lässt sich dem Operator Menü sehr einfach hinzufügen, indem <code>bl_options</code> der <strong>Operatorklasse</strong> neben <code>REGISTER</code> und <code>UNDO</code> zusätzlich noch <code>PRESET</code> übergeben wird.</p>
+<p><img src="img/preset.png" alt="Operator Presets"></p>
+<h2 id="operator-zu-existierendem-menü-hinzufügen">Operator zu existierendem Menü hinzufügen</h2>
+<ul>
+<li>Eine Operatorklasse können wir einem existierendem Menü hinzufügen, indem wir zunächst eine Funktion erstellen, die dem <code>layout</code> des übergebenen context wie bereits beim Panel einen Operator hinzufügt.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">add_object_button</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">context</span><span class="p">):</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="bp">self</span><span class="o">.</span><span class="n">layout</span><span class="o">.</span><span class="n">operator</span><span class="p">(</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">        <span class="n">OBJECT_OT_add_object</span><span class="o">.</span><span class="n">bl_idname</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">        <span class="n">text</span><span class="o">=</span><span class="s2">&#34;Add Object&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="ln">5</span><span class="cl">        <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;PLUGIN&#39;</span><span class="p">)</span>
+</span></span></code></pre></div><ul>
+<li>in der <code>register</code> Funktion fügen wir dann dem in <code>bpy.types</code> gespeichertem Menü usere Buttonfunktion hinzu un</li>
+<li><code>VIEW3D_MT_mesh_add</code> bedeutet hier <em>View3d Editor → <strong>Me</strong>nu <strong>T</strong>op</em> → Add → Mesh</li>
+<li>in <code>unregister</code> müssen wir den Eintrag auch wieder entfernen.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="ln">1</span><span class="cl"><span class="k">def</span> <span class="nf">register</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">2</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">register_class</span><span class="p">(</span><span class="n">OBJECT_OT_add_object</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">3</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">VIEW3D_MT_mesh_add</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">add_object_button</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">4</span><span class="cl">
+</span></span><span class="line"><span class="ln">5</span><span class="cl">
+</span></span><span class="line"><span class="ln">6</span><span class="cl"><span class="k">def</span> <span class="nf">unregister</span><span class="p">():</span>
+</span></span><span class="line"><span class="ln">7</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">unregister_class</span><span class="p">(</span><span class="n">OBJECT_OT_add_object</span><span class="p">)</span>
+</span></span><span class="line"><span class="ln">8</span><span class="cl">    <span class="n">bpy</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">VIEW3D_MT_mesh_add</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">add_object_button</span><span class="p">)</span>
+</span></span></code></pre></div><h2 id="ressourcen--tutorials-zum-thema">Ressourcen &amp; Tutorials zum Thema</h2>
+<table>
+<thead>
+<tr>
+<th>Art/Länge</th>
+<th>Titel</th>
+<th>Beschreibung</th>
+<th>Quelle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/video.png" class="resicon">  19min</td>
+<td><a href="https://cloud.blender.org/training/scripting-for-artists/5e9953ab173f1d99c7826902">Scripting for Artists #10: User Interfaces</a></td>
+<td>Tutorial zu UI Panels</td>
+<td><a href="https://cloud.blender.org">Blender Cloud</a></td>
+</tr>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/article.png" class="resicon"></td>
+<td><a href="https://sinestesia.co/blog/tutorials/using-blenders-presets-in-python/">Using Blender&rsquo;s presets in Python</a></td>
+<td>Offizielle Blender API Dokumentation</td>
+<td><a href="https://sinestesia.co/">SINESTESIA</a></td>
+</tr>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/article.png" class="resicon"></td>
+<td><a href="https://docs.blender.org/api/current/bpy.types.UILayout.html">UI Layout Dokumentation</a></td>
+<td>Offizielle Blender API Dokumentation</td>
+<td><a href="https://docs.blender.org/api/current/index.html">Blender Python API Dokumentation</a></td>
+</tr>
+<tr>
+<td><img src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/general/icons/article.png" class="resicon"></td>
+<td><a href="https://docs.blender.org/api/current/bpy.types.Space.html#bpy.types.Space.type">Spacetype Dokumentation</a></td>
+<td>Offizielle Blender API Dokumentation</td>
+<td><a href="https://docs.blender.org/api/current/index.html">Blender Python API Dokumentation</a></td>
+</tr>
+</tbody>
+</table>
+
+
+			<aside class="copyright" role="note">
+				
+				Documentation built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using the
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter06/exercise01_a/" title="Übung 6 - Assetgenerierung - Das Rad nicht neu erfinden">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Übung 6 - Assetgenerierung - Das Rad nicht neu erfinden
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
+
