@@ -34,6 +34,8 @@ pre {
     float: left;
     margin-right: 8px;
     filter: invert();
+    mix-blend-mode: lighten;
+
 }
 
 .doclink img {
@@ -55,6 +57,7 @@ pre {
     border-radius: 7px;
     margin: 0px 3px !important;
 }
+
 
 .tcl-column {
     float: left;
@@ -132,4 +135,66 @@ pre {
 
 .hide {
     background-color: teal;
+}
+
+
+@supports (-webkit-appearance:none) {
+    .palette-primary-indigo {
+        background: #252b50 !important
+    }
+}
+
+.palette-primary-indigo .footer,
+.palette-primary-indigo .header {
+    background: #3c3e4b;
+}
+
+.palette-primary-indigo .drawer .toc a.current,
+.palette-primary-indigo .drawer .toc a:focus,
+.palette-primary-indigo .drawer .toc a:hover {
+    color: #606af3
+}
+
+.palette-primary-indigo .drawer .anchor a {
+    border-left: 2px solid #252b50
+}
+
+.ios.standalone .palette-primary-indigo .article {
+    background: -webkit-linear-gradient(top, #fff 50%, #252b50 0);
+    background: linear-gradient(180deg, #fff 50%, #252b50 0)
+}
+
+.palette-primary-indigo .article a,
+.palette-primary-indigo .article code,
+.palette-primary-indigo .article h1,
+.palette-primary-indigo .article h2 {
+    color: #ced5f3
+}
+
+.palette-primary-indigo .article .headerlink {
+    color: rgba(0, 0, 0, .26)
+}
+
+.palette-primary-indigo .article table th {
+    background: #394171
+}
+
+.palette-primary-indigo .results .meta {
+    background: #252b50
+}
+
+.article {
+    background-color: #2e3236;
+    min-height: 100dvh;
+}
+
+tbody {
+    background-color: #363b40;
+}
+
+@media only screen and (max-width: 959px) {
+
+    .drawer .project {
+        background-color: #3c3e4b;
+    }
 }
