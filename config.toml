@@ -56,7 +56,7 @@ googleAnalytics = ""
 
 [[menu.main]]
 	weight = 1
-	name   = "1. Blender & Scripting-Tools"
+	name   = "1. Datenstrukturen in 3D & Godot Basics"
 	url    = "chapter01/exercise01_a/"
 	parent = "Kapitel"
 

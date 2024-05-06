@@ -1,22 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chapter04s on Datenverarbeitung in der Medienproduktion</title>
-    <link>https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/</link>
-    <description>Recent content in Chapter04s on Datenverarbeitung in der Medienproduktion</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>de</language><atom:link href="https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/index.xml" rel="self" type="application/rss+xml" />
+    <title>Chapter04s on Computergrafik MIB</title>
+    <link>http://localhost:1313/cg-mib/chapter04/</link>
+    <description>Recent content in Chapter04s on Computergrafik MIB</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <atom:link href="http://localhost:1313/cg-mib/chapter04/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Übung 4 - Meshgenerierung</title>
-      <link>https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/</link>
+      <link>http://localhost:1313/cg-mib/chapter04/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://simonstorlschulke.github.io/Datenverarbeitung-in-der-Medienproduktion/chapter04/exercise01_a/</guid>
-      <description>Basics der Meshgenerierung und -manipulation
-Vorbereitung Aktiviere das vorinstallierte Addon MeasureIt Tols. Dieses erlaubt es uns, Indices, Positionen und andere Infos des selektierten Objekts im Viewport anzuzeigen.
-Nach der Installation sind dessen Optionen in der Sidebar (Shortcut N → View → MeasureIt Tools → Mesh Debug) zu finden. Das Addon selbst muss noch mit Show ganz oben im Panel gestartet werden.
-Zu den wichtigsten Aufgaben von Addons gehört die Manipulation und Generierung neuer Meshes.</description>
+      <guid>http://localhost:1313/cg-mib/chapter04/exercise01_a/</guid>
+      <description>Basics der Meshgenerierung und -manipulation&#xA;Vorbereitung Aktiviere das vorinstallierte Addon MeasureIt Tols. Dieses erlaubt es uns, Indices, Positionen und andere Infos des selektierten Objekts im Viewport anzuzeigen.&#xA;Nach der Installation sind dessen Optionen in der Sidebar (Shortcut N → View → MeasureIt Tools → Mesh Debug) zu finden. Das Addon selbst muss noch mit Show ganz oben im Panel gestartet werden.&#xA;Zu den wichtigsten Aufgaben von Addons gehört die Manipulation und Generierung neuer Meshes.</description>
     </item>
-    
   </channel>
 </rss>

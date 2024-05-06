@@ -22,37 +22,24 @@
 | 19. Jan	| Projektberichte I                        |
 | 26. Jan	| Projektberichte II                       |
 
-## Geplante Veranstaltungsstruktur
+## Veranstaltungsstruktur
+
+
 | VS Nr.   | Inhalt                                   |
 |---------|------------------------------------------|
-| 1 | Blender Setup und Scripting-Tools - Monkeygrid |
-| 2 | Python & Blender API - zufällige Würfeltürmchen generieren |
-| 3 | Operatoren & Codestruktur  - Würfeldimension |
-| 7 | Addon UI |
-| 4 | Meshgenerierung und Manipulation 1 & Projektthemen Orga |
-| 5 | Meshgenerierung und Manipulation 2 - BMesh |
-| 6 | VS Code Setup & Addon-Entwicklung (vlt auch vor Meshgen.?) |
-| 8 | fortgeschrittene Prozedurale Assetgenerierung (Texturen, Noise etc.) |
-| 9 | Projekt Zwischenstandspräsentationen |
-| 10| Materialien |
-| 11| Animation |
-| 12| OLS(?) |
-| 13| Projektpräsentationen 1 |
-| 14| Projektpräsentationen 2 |
+| 1 | Datenstrukturen in 3D - Meshes & Godot Basics |
 
-### Weitere Themenideen:
-- Batch Rendering
-- OSL
-- Noise Basics (Value Noise + FBM)
-- Rigging mit Expressions
-- IO
 
 ## Semesterprojekt
-- nach ca 3-4 Vorlesungen Themenwahl (zur Verfügung stellen oder eigenes
-- Konzeptvorstellung ca in VL 5 
-- Zwischenstandspräsentationen nach ca 2/3 des Semesters
-- Endpräsentationen vor Gruppe in letzte(n) 1-2 VL oder Extratermin
-- Abgabe besteht aus Scripts als Addon und optional Blender File + Video-/Bildmaterial
+
+Nach ca 3-4 Veranstaltungen wird von jeder Gruppe (1-3 Studierende) ein Thema im Bereich CG gewählt. Zu diesem Thema wird ein Godot Projekt umgesetzt und am Ende des Semesters vorgestellt. Die Präsentation / Abgabe wird anhand folgender Kriterien bewertet:
+
+- Wurde die zur Verfügung stehende Zeit genutzt?
+- Komplexität der Aufgabe
+- Darstellung der Fertigkeiten im Bereich Skripting einer VFX/Compositing/3D-Anwendung
+- Umsetzung: Wie stark wurde der die Zielsetzung erreicht
+- Handwerkliche Qualität der Arbeit (alles auf Kante genäht oder am Ergebnis gefeilt, bis es passt)
+- Qualität der Vorträge (Vorbereitung, Visualisierungen, Folien, …)
 
 ### Projektthemen Bsp.
 - Fraktale
@@ -64,20 +51,6 @@
 - Assets & Code für jede Stunde vorbereiten.
 - Teil der Aufgabe in Script beschreiben und Stunde live zeigen - dann Zusatzaufgabe für "Zuhause". Eine der Lösungen Anfang nächster Stunde demonstrieren.
 - Werden Python Basics wirklich benötigt? Wenn ja vlt direkt in Blender anfangen. Grundkenntnisse im Programmieren vlt. als Voraussetzung - hatten ja die Meisten.
-
-**Vorschläge Namensänderung:**
-Da der aktuelle Name der Veranstaltung recht nichtssagend ist:
-- Automatisierung in der Computergrafik
-- Datenverarbeitung in der Computergrafik
-
-## Nützliche Links
-- [Scripting for Artists (Blender Cloud)](https://cloud.blender.org/p/scripting-for-artists/)
-- [Python Crashcourse for Blender | Curtis Holt](https://www.youtube.com/watch?v=XqX5wh4YeRw)
-- [Blender API Doc](https://docs.blender.org/api/current/index.html)
-- [My Journey into Fractals | Gregory Ivanov](https://medium.com/@bananaft/my-journey-into-fractals-d25ebc6c4dc2)
-- [create meshes from low-level data | Diego Gangl](http://sinestesia.co/blog/tutorials/python-2d-grid/)
-- [create meshes from low-level data | Diego Gangl](http://sinestesia.co/blog/tutorials/python-2d-grid/)
-- [Blender Python - Scripting Series | Darkfall](https://www.youtube.com/playlist?list=PLFtLHTf5bnym_wk4DcYIMq1DkjqB7kDb-)
 
 
 **Fenstergröße für Screenshots setzen (Linux):**  

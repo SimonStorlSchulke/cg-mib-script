@@ -185,6 +185,7 @@ pre {
 
 .article {
     background-color: #2e3236;
+    min-height: 100dvh;
 }
 
 tbody {
