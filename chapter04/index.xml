@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapter04s on Computergrafik MIB</title>
-    <link>http://localhost:1313/cg-mib/chapter04/</link>
+    <link>https://simonstorlschulke.github.io/chapter04/</link>
     <description>Recent content in Chapter04s on Computergrafik MIB</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="http://localhost:1313/cg-mib/chapter04/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://simonstorlschulke.github.io/chapter04/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Übung 4 - Meshgenerierung</title>
-      <link>http://localhost:1313/cg-mib/chapter04/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter04/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter04/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter04/exercise01_a/</guid>
       <description>Basics der Meshgenerierung und -manipulation&#xA;Vorbereitung Aktiviere das vorinstallierte Addon MeasureIt Tols. Dieses erlaubt es uns, Indices, Positionen und andere Infos des selektierten Objekts im Viewport anzuzeigen.&#xA;Nach der Installation sind dessen Optionen in der Sidebar (Shortcut N → View → MeasureIt Tools → Mesh Debug) zu finden. Das Addon selbst muss noch mit Show ganz oben im Panel gestartet werden.&#xA;Zu den wichtigsten Aufgaben von Addons gehört die Manipulation und Generierung neuer Meshes.</description>
     </item>
   </channel>

@@ -2,121 +2,121 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Computergrafik MIB</title>
-    <link>http://localhost:1313/cg-mib/</link>
+    <link>https://simonstorlschulke.github.io/</link>
     <description>Recent content on Computergrafik MIB</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="http://localhost:1313/cg-mib/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://simonstorlschulke.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
-      <link>http://localhost:1313/cg-mib/chapter02/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter02/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter02/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter02/exercise01_a/</guid>
       <description></description>
     </item>
     <item>
       <title>1. Datenstrukturen in 3D &amp; Godot Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter01/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter01/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter01/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter01/exercise01_a/</guid>
       <description>Datenstrukturen in 3D - Meshes Die wohl wichtigste Methode zur Repräsentation dreidimensionaler Objekte im Speicher eines Computers ist das Drahtgittermodell - englisch Mesh. Hierbei wird die Form eines Objektes approximiert, indem es aus Dreiecken modelliert wird.&#xA;Das Maskottchen der 3D Software Blender als Drahtgittermodell aus Drei-, bzw Vierecken&#xA;Oft wird dem Nutzer von 3D Software auch ermöglicht Formen mit 4 oder noch mehr Eckpunkten zum modellieren zu verwenden, irgendwo auf dem Weg von der Benutzeroberfläche zur Grafikkarte werden diese jedoch immer wieder zu Dreiecken umgewandelt.</description>
     </item>
     <item>
       <title>Allgemeines</title>
-      <link>http://localhost:1313/cg-mib/general/</link>
+      <link>https://simonstorlschulke.github.io/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/general/</guid>
+      <guid>https://simonstorlschulke.github.io/general/</guid>
       <description>Vorlesungsunterlagen für die Veranstalltung Computergrafik MIB - zweite Semesterhälfte.&#xA;Inhalt Interaktion mit 3D Szenen ermöglichen Automatisierung von Prozessen in der Meshgenerierung Shaderprogrammierung Algorithmische Erzeugung von Geometrien, Materialien und Texturen Auslesung und Nutzung von Daten für die Medienproduktion Zur praktischen Umsetzung dieser Themen wird die Game Engine Godot eingesetzt&#xA;Telnahmevoraussetzungen Benötigt:&#xA;Grundkenntnisse im Programmieren Grundverständnis für 3D Software Hilfreich:&#xA;Gundkenntnisse im Umgang mit GameEngines wie Unreal, Godot oder Unity Semesterprojekt nach ca 3-4 Vorlesungen Themenwahl (zur Verfügung gestellt oder eigenes) Konzeptvorstellung ca in VL 5 Präsentationen vor Gruppe in letzter VL Abgabe besteht aus einem Godotprojekt + Kurzer Dokumentation Beurteilungskriterien Skripting-Projekt Nach ca 3-4 Veranstaltungen wird von jeder Gruppe (1-3 Studierende) ein Thema im Bereich CG gewählt.</description>
     </item>
     <item>
       <title>Codeschnipsel aus der Vorlesung</title>
-      <link>http://localhost:1313/cg-mib/course-python-scripts/</link>
+      <link>https://simonstorlschulke.github.io/course-python-scripts/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/course-python-scripts/</guid>
+      <guid>https://simonstorlschulke.github.io/course-python-scripts/</guid>
       <description>SoSe24 </description>
     </item>
     <item>
       <title>Links &amp; Literatur</title>
-      <link>http://localhost:1313/cg-mib/links/</link>
+      <link>https://simonstorlschulke.github.io/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/links/</guid>
+      <guid>https://simonstorlschulke.github.io/links/</guid>
       <description>Python (Blender unabhängig) Art/Länge Titel Beschreibung Quelle The Python 3.7 Tutorial Einstieg in Python Offizielle Python 3.7 Documentation Einführung ins Programmieren mit Python Python Tutorial Auf Deutsch pythonbuch.com 111min Python Tutorial 2020 Einführung in alle wichtigen Python Funktionalitäten YouTube - Derek Banas Blender Scripting allgemein Art/Länge Titel Beschreibung Quelle 44min Python Crashcourse for Blender Guter Schnelleinstieg in Scripting mit Blender YouTube - Curtis Holt Blender Python API Dokumentation Offizielle Blender API Dokumentation Blender Python API Dokumentation 21x je 5-20min Blender Python - Scripting Series Ausführlichere Serie zu Blender Scripting YouTube - Darkfall 15x je 5-20min Scripting for Artists Sehr gute aufgearbeitete Serie zu Blender Scripting und Addon Entwicklung - teilweise jedoch kostenpflichtig Blender Cloud - Dr.</description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter01/exercise01_b/</link>
+      <link>https://simonstorlschulke.github.io/chapter01/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter01/exercise01_b/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter01/exercise01_b/</guid>
       <description>U1 </description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter02/exercise01_b/</link>
+      <link>https://simonstorlschulke.github.io/chapter02/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter02/exercise01_b/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter02/exercise01_b/</guid>
       <description></description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter03/exercise01_b/</link>
+      <link>https://simonstorlschulke.github.io/chapter03/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter03/exercise01_b/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter03/exercise01_b/</guid>
       <description></description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter05/exercise01_b/</link>
+      <link>https://simonstorlschulke.github.io/chapter05/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter05/exercise01_b/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter05/exercise01_b/</guid>
       <description></description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>http://localhost:1313/cg-mib/chapter06/exercise01_b/</link>
+      <link>https://simonstorlschulke.github.io/chapter06/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter06/exercise01_b/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter06/exercise01_b/</guid>
       <description></description>
     </item>
     <item>
       <title>Übung 11 - Animation</title>
-      <link>http://localhost:1313/cg-mib/chapter11/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter11/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter11/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter11/exercise01_a/</guid>
       <description>Zur Generierung von Animationen stellt uns die Blender API verschiedene Möglichkeiten zur Verfügung. In folgender Übung werden wir uns die wichtigsten hiervon ansehen.&#xA;Keyframes Driver Scripted Expressions Custom Drivers App Handlers Keyframes Wir können die Blender API nutzen um per Script Keyframes zu setzen. Dafür wird die Methode keyframe_insert verwendet. Diese kann zum Beispiel von Objekten aus aufgerufen werden. Deren wichtigste Parameter sind data_path (Pfad zum Wert, der verwendet werden soll) und frame (Framenummer des Keyframes).</description>
     </item>
     <item>
       <title>Übung 3 - Operatoren &amp; Addons</title>
-      <link>http://localhost:1313/cg-mib/chapter03/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter03/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter03/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter03/exercise01_a/</guid>
       <description>Bisher sind alle Funktionalitäten, die wir mit unseren Scripten erstellt haben auch nur als solche ausführbar - als Script im Texteditor. In dieser Übung wollen wir das ändern und Blender selbst um eine Benutzeroberfläche für die Generierung unseres Turms erweitern&#xA;Operatoren Wir haben bereits die ops Kategorie des bpy Moduls kennengelernt. Nun wollen wir unseren eigenen Operator schreiben, der dann auch über die API aufgerufen und mit der F3-Suche gefunden werden kann.</description>
     </item>
     <item>
       <title>Übung 4 - Meshgenerierung</title>
-      <link>http://localhost:1313/cg-mib/chapter04/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter04/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter04/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter04/exercise01_a/</guid>
       <description>Basics der Meshgenerierung und -manipulation&#xA;Vorbereitung Aktiviere das vorinstallierte Addon MeasureIt Tols. Dieses erlaubt es uns, Indices, Positionen und andere Infos des selektierten Objekts im Viewport anzuzeigen.&#xA;Nach der Installation sind dessen Optionen in der Sidebar (Shortcut N → View → MeasureIt Tools → Mesh Debug) zu finden. Das Addon selbst muss noch mit Show ganz oben im Panel gestartet werden.&#xA;Zu den wichtigsten Aufgaben von Addons gehört die Manipulation und Generierung neuer Meshes.</description>
     </item>
     <item>
       <title>Übung 5 - Animation</title>
-      <link>http://localhost:1313/cg-mib/chapter05/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter05/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter05/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter05/exercise01_a/</guid>
       <description>Zur Generierung von Animationen stellt uns die Blender API verschiedene Möglichkeiten zur Verfügung. In folgender Übung werden wir uns die Wichtigsten hiervon ansehen.&#xA;Keyframes Driver Scripted Expressions Custom Drivers App Handlers Keyframes Wir können die Blender API nutzen um per Script Keyframes zu setzen. Dafür wird die Methode keyframe_insert verwendet. Diese kann zum Beispiel von Objekten aus aufgerufen werden. Deren wichtigste Parameter sind data_path (Pfad zum Wert, der verwendet werden soll) und frame (Framenummer des Keyframes).</description>
     </item>
     <item>
       <title>Übung 6 - Assetgenerierung - Das Rad nicht neu erfinden</title>
-      <link>http://localhost:1313/cg-mib/chapter06/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter06/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter06/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter06/exercise01_a/</guid>
       <description>Bei der Generierung von Assets kann es auf den ersten Blick naheliegend oder wünschenswert erscheinen, alles an Meshes selbst zu generieren. Damit macht man sich allerdings mehr Aufwand als nötig und hat zudem wahrscheinlich schlechter Performance und Nutzerfreudlichkeit, als wenn man einfach mit den bereits vorhandenen Werkzeugen arbeiten würde. Für uns als Addonentwickler ist es daher wichtig, die Möglichkeiten der Software mit der wir arbeiten gut zu kennen. Wichtig sind bei der Assetgenerierung vor allem die Modifier.</description>
     </item>
     <item>
       <title>Übung 7 - User Interfaces</title>
-      <link>http://localhost:1313/cg-mib/chapter07/exercise01_a/</link>
+      <link>https://simonstorlschulke.github.io/chapter07/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/cg-mib/chapter07/exercise01_a/</guid>
+      <guid>https://simonstorlschulke.github.io/chapter07/exercise01_a/</guid>
       <description>In Übung 3 haben wir uns schon mit der Erstellung von Operatoren beschäftigt und damit auch die ersten Schritte in Richtung GUI gemacht. In dieser Übung wollen wir unser eigenes Panel bauen und Operatoren zu Menüs hinzufügen.&#xA;Wir fangen damit an, unser Skript aus Übung 4 zum Generieren von Graßhalmen in einen Operator innerhalb eines Addons umzuwandeln. Seht euch dazu nocheinmal Übung 3 an. Wir wandeln wir die Konstanten (BLADES, HEIGHT, ANGLE_BASE&amp;hellip;.</description>
     </item>
   </channel>
