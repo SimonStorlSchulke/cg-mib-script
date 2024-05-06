@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapter01s on Computergrafik MIB</title>
-    <link>https://simonstorlschulke.github.io/cg-mib/chapter01/</link>
+    <link>http://localhost:1313/cg-mib/chapter01/</link>
     <description>Recent content in Chapter01s on Computergrafik MIB</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="https://simonstorlschulke.github.io/cg-mib/chapter01/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/cg-mib/chapter01/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>1. Datenstrukturen in 3D &amp; Godot Basics</title>
-      <link>https://simonstorlschulke.github.io/cg-mib/chapter01/exercise01_a/</link>
+      <link>http://localhost:1313/cg-mib/chapter01/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://simonstorlschulke.github.io/cg-mib/chapter01/exercise01_a/</guid>
+      <guid>http://localhost:1313/cg-mib/chapter01/exercise01_a/</guid>
       <description>Datenstrukturen in 3D - Meshes Die wohl wichtigste Methode zur Repräsentation dreidimensionaler Objekte im Speicher eines Computers ist das Drahtgittermodell - englisch Mesh. Hierbei wird die Form eines Objektes approximiert, indem es aus Dreiecken modelliert wird.&#xA;Das Maskottchen der 3D Software Blender als Drahtgittermodell aus Drei-, bzw Vierecken&#xA;Oft wird dem Nutzer von 3D Software auch ermöglicht Formen mit 4 oder noch mehr Eckpunkten zum modellieren zu verwenden, irgendwo auf dem Weg von der Benutzeroberfläche zur Grafikkarte werden diese jedoch immer wieder zu Dreiecken umgewandelt.</description>
     </item>
     <item>
       <title>Übung 1 - Basics</title>
-      <link>https://simonstorlschulke.github.io/cg-mib/chapter01/exercise01_b/</link>
+      <link>http://localhost:1313/cg-mib/chapter01/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://simonstorlschulke.github.io/cg-mib/chapter01/exercise01_b/</guid>
+      <guid>http://localhost:1313/cg-mib/chapter01/exercise01_b/</guid>
       <description>U1 </description>
     </item>
   </channel>

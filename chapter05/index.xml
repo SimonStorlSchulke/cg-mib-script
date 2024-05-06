@@ -2,23 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Chapter05s on Computergrafik MIB</title>
-    <link>https://simonstorlschulke.github.io/cg-mib/chapter05/</link>
+    <link>http://localhost:1313/cg-mib/chapter05/</link>
     <description>Recent content in Chapter05s on Computergrafik MIB</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <atom:link href="https://simonstorlschulke.github.io/cg-mib/chapter05/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/cg-mib/chapter05/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Übung 1 - Basics</title>
-      <link>https://simonstorlschulke.github.io/cg-mib/chapter05/exercise01_b/</link>
+      <link>http://localhost:1313/cg-mib/chapter05/exercise01_b/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://simonstorlschulke.github.io/cg-mib/chapter05/exercise01_b/</guid>
+      <guid>http://localhost:1313/cg-mib/chapter05/exercise01_b/</guid>
       <description></description>
     </item>
     <item>
       <title>Übung 5 - Animation</title>
-      <link>https://simonstorlschulke.github.io/cg-mib/chapter05/exercise01_a/</link>
+      <link>http://localhost:1313/cg-mib/chapter05/exercise01_a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://simonstorlschulke.github.io/cg-mib/chapter05/exercise01_a/</guid>
+      <guid>http://localhost:1313/cg-mib/chapter05/exercise01_a/</guid>
       <description>Zur Generierung von Animationen stellt uns die Blender API verschiedene Möglichkeiten zur Verfügung. In folgender Übung werden wir uns die Wichtigsten hiervon ansehen.&#xA;Keyframes Driver Scripted Expressions Custom Drivers App Handlers Keyframes Wir können die Blender API nutzen um per Script Keyframes zu setzen. Dafür wird die Methode keyframe_insert verwendet. Diese kann zum Beispiel von Objekten aus aufgerufen werden. Deren wichtigste Parameter sind data_path (Pfad zum Wert, der verwendet werden soll) und frame (Framenummer des Keyframes).</description>
     </item>
   </channel>
