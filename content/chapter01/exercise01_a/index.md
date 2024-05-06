@@ -12,7 +12,7 @@ Die wohl wichtigste Methode zur Repräsentation dreidimensionaler Objekte im Spe
 Oft wird dem Nutzer von 3D Software auch ermöglicht Formen mit 4 oder noch mehr Eckpunkten zum modellieren zu verwenden, irgendwo auf dem Weg von der Benutzeroberfläche zur Grafikkarte werden diese jedoch immer wieder zu Dreiecken umgewandelt.
 
 {{<info>}}
-Grafikkarten sind über die Jahre immer besser darin geworden große Mengen dieser Dreiecke darzustellen und Lichsimulationen damit auszuführen. Effekte, die vor ein paar Jahren noch Filmen vorbehalten waren (bei denen jeder Frame minuten bis Stunden für das Rendering braucht), sind in odernen Videospielen inzwischen in 120 Frames pro Sekunde möglich.
+Grafikkarten sind über die Jahre immer besser darin geworden große Mengen dieser Dreiecke darzustellen und Lichtsimulationen damit auszuführen. Effekte, die vor ein paar Jahren noch Filmen vorbehalten waren (bei denen jeder Frame Minuten bis Stunden für das Rendering braucht), sind in modernen Videospielen inzwischen in 120 Frames pro Sekunde möglich.
 
 {{<twoculumn>}}
 {{<left 50>}}
@@ -32,10 +32,10 @@ die jeweils aus 3 Werten (x, y, z) bestehen.
 
 ![vertex list](img/vertexlist.png)
 
-Zur Optimierung des Renderings werden die Dreiecke meist nur aus einer Blickrichtung dargestellt ("Backface Culling"). Daher ist auch die Reihenfolge in der die Punkte gespeichert werden wichtig. Normalerweise gehen Renderengines davon aus, dass die Vorderansicht eines Dreiecks die ist, aus der die Eckpunkte der Reihenfolge nach im Urzeigersinn gespeichert sind.
+Zur Optimierung des Renderings werden die Dreiecke meist nur aus einer Blickrichtung dargestellt ("Backface Culling"). Daher ist auch die Reihenfolge in der die Punkte gespeichert werden wichtig. Normalerweise gehen Renderengines davon aus, dass die Vorderansicht eines Dreiecks die ist, aus der die Eckpunkte der Reihenfolge nach im Uhrzeigersinn gespeichert sind.
 
 **Vertex Indices**  
-Letztere Methode funktioniert für einfache Objekte, hat jedoch den Nachteil, dass Eckunkte (Vertices) die von mehreren Flächen verwendet werden für jede Fläche separat gespeichert werden müssen. Um Speicherplatz und Rechenleistung zu Optimieren wird meist mit sogenannten Vertex Indices gearbeitet.  
+Letztere Methode funktioniert für einfache Objekte, hat jedoch den Nachteil, dass Eckpunkte (Vertices) die von mehreren Flächen verwendet werden für jede Fläche separat gespeichert werden müssen. Um Speicherplatz und Rechenleistung zu Optimieren wird meist mit sogenannten Vertex Indices gearbeitet.  
 Dabei werden die Punkte wie zuvor ein einer Liste gespeichert, jedoch wird eine zusätzliche Liste angelegt, in der jeweils die Indices von drei (oder je nach Format auch mehr) dieser Punkte angegeben werden, die eine Fläche bilden.
 
 ![keine vertex indices](img/no_vertex_indices.png)
@@ -52,7 +52,22 @@ Ignoriert die erzeugte .mtl Datei (diese betrifft Materialien) und öffnet die .
 Normalen und Texturkoordinaten interessieren uns hier vorerst nicht
 {{</todo>}}
 
-**Vertex Indices**
+
+**Normalen**  
+Nun da der Computer weiß, wo die Flächen eines Modells sein sollen, wird für die Berechnung der Beleuchtung einer Szene noch die Richtung benötigt, in die jeder Oberflächenpunkt "zeigt" - also der orthogonale Vektor zur Oberfläche. Auch hierfür gibt es verschiedene Herangehensweisen. z.B.:
+
+1. Die Normale wird gar nicht mit abgespeichert sondern für jedes Dreieck live anhand der Vertexpositionen berechnet. Dies hat den Vorteil, dass sich die 3D Software / das Speicherformat nicht um die Normalen kümmern muss. Die Renderengine benötigt dann jedoch mehr Rechenleistung.
+
+2. Die Normalen werden für jede Fläche mit abgespeichert (wie z.B. im .obj Format)
+
+3. Die Normalen werden nicht für jede Fläche, sondern für jeden Vertex mitgespeichert. Das hat den Vorteil, dass die Normalen auf der Fläche dann abhängig zur Distanz zu jedem Eckpunkt interpoliert werden können und somit auch Objekte mit wenig Punkten "weich" gezeichnet werden können.
+
+
+![face normals vs vertex normals](img/shad-face-normals.png)  
+**Face Normals vs Vertex Normals**
+source: [https://www.scratchapixel.com/images/shading-intro/shad-face-normals2.png](https://www.scratchapixel.com/images/shading-intro/shad-face-normals2.png)
+![face normals vs vertex normals](img/facenormals_vertexnormals.png)  
+Darstellung einer Kugel mit Face-Normals vs. "Smooth Shading" mithilfe interpolierter vertex normals
 
 ## Erste Schritte
 
@@ -70,9 +85,9 @@ Normalen und Texturkoordinaten interessieren uns hier vorerst nicht
 
 Die Engine öffnet sich 
 
-{{<counter 1>}} Der Szenenviewer dient der Vorschau in der 3D / 2D Szene und der transformation von Objekten.  
+{{<counter 1>}} Der Szeneviewer dient der Vorschau in der 3D / 2D Szene und der transformation von Objekten.  
 
-{{<counter 2>}} Din diesem Bereich kann die Szenenhierarchie überblickt und bearbeitet werden.  
+{{<counter 2>}} In diesem Bereich kann die Szenenhierarchie überblickt und bearbeitet werden.  
 
 {{<counter 3>}} Im Inspector können die Eigenschaften des aktuell ausgewählte Objekts (Node*) bearbeitet werden.  
 
@@ -83,5 +98,51 @@ Die Engine öffnet sich
 
 **freie Arbeit (45-60min)**  
 Arbeite die Godot Dokumentation ["Getting started"](https://docs.godotengine.org/en/stable/tutorials/3d/procedural_geometry/index.html) (oder [auf deusch](https://docs.godotengine.org/de/4.x/getting_started/introduction/index.html)) durch oder mache dich anderweitig mit den Grundkonzepten von Godot bekannt. Die Sektion "Your first 2D Game" kann übersprungen werden, da wir uns hier ausschließlich mit der 3D Funktionalität von Godot beschäftigen werden.  
+
+{{</todo>}}
+
+## Meshgenerierung mit Godot
+
+Godot stellt uns viele mächtigere Tools zur Verfügung um in-code 3D Objekte zu generieren. Wir fangen hier nun mit der 
+
+Ein [ArrayMesh](https://docs.godotengine.org/en/stable/classes/class_arraymesh.html)
+ in Godot wird aus einem Array erzeugt, bei dem jeder Eintrag ein weiterer Array ist. Der Aufbau ist ähnlich dem einer .obj Datei.  
+Der erste Subarray enthält alle Vertexpositionen, der zweite die Vertexnormalen (in der selben Reihenfolge), dann folgen Texturcoordinaten etc.
+Schließlich ist der 12. Subarray der Vertex-Indices Array, der bestimmt, zwischen welchen Punkten die Flächen gezogen werden sollen. Dieser ist optional - wird er nicht angegeben, werden wie oben die Dreiecke einfach der vorkommenden Reihenfolge nach gezogen.
+
+ [Siehe ArrayType](https://docs.godotengine.org/en/stable/classes/class_mesh.html#enum-mesh-arraytype)
+
+![arraymesh](img/arraymesh.png)
+
+{{<todo>}}
+
+Nutzt Godots ArrayMesh, um ein Mesh (eurer Wahl) zu generieren.
+
+![Godot beim Start](img/armesh_todo_01.png)  
+Erzeugt dazu eine 3D Szene
+
+![Godot beim Start](img/armesh_todo_02.png)
+Fügt dem Node3D als Kind einen *Meshinstance* Node hinzu
+
+![Godot beim Start](img/armesh_todo_03.png)
+Fügt diesem nun ein script hinzu und gebt ihm folgenden Inhalt:
+
+
+{{< highlight gdscript >}}
+@tool # ermöglicht es Skripte im Editor (ohne dass das Spiel gestartet werden muss) auszuführen
+extends MeshInstance3D
+
+@export var regenerate_mesh: bool:
+	set(value):
+		create_mesh()
+
+func create_mesh():
+	pass
+{{< / highlight >}}
+
+
+Die genaue Funktion von Zeile 4-6 ist vorerst nicht wichtig - das sorgt nur dafür, dass ihr nun im 3D Editor wenn MeshInstance selektiert ist einen "Regenerate Mesh" Button rechts hat, der die Funktion `create_mesh()` ausführt.
+
+Fügt nun euren Code in die Funktion `create_mesh()` ein. Hilfreich ist hier die [Dokumentation zu ArrayMeshes](https://docs.godotengine.org/en/stable/classes/class_arraymesh.html).
 
 {{</todo>}}
