@@ -1,4 +1,4 @@
-baseurl = "https://simonstorlschulke.github.io/cg-mib/"
+baseurl = "https://simonstorlschulke.github.io/cg-mib-2/"
 languageCode = "de"
 title = "Computergrafik MIB"
 theme = "material-docs"
@@ -47,8 +47,8 @@ googleAnalytics = ""
 	parent = "Allgemeines"
 
 [[menu.main]]
-	name   = "Vorlesungs Pythonscripts"
-	url    = "course-python-scripts/"
+	name   = "Codeschnipsel"
+	url    = "course-scripts/"
 	parent = "Allgemeines"
 
 [[menu.main]]
@@ -60,6 +60,19 @@ googleAnalytics = ""
 	url    = "chapter01/exercise01_a/"
 	parent = "Kapitel"
 
+
+[[menu.main]]
+	weight = 1
+	name   = "2. Prozedurales Gelände"
+	url    = "chapter02/exercise01_a/"
+	parent = "Kapitel"
+
+
+[[menu.main]]
+	weight = 1
+	name   = "3. Prozedurales Gelände"
+	url    = "chapter03/exercise01_a/"
+	parent = "Kapitel"
 
 # [[menu.main]]
 # 	weight = 11
@@ -96,4 +109,4 @@ googleAnalytics = ""
 		lineNos = true
 		lineNumbersInTable = false
 		noClasses = false
-		tabWidth = 4
+		tabWidth = 4    
