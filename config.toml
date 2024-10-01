@@ -60,7 +60,6 @@ googleAnalytics = ""
 	url    = "chapter01/exercise01_a/"
 	parent = "Kapitel"
 
-
 [[menu.main]]
 	weight = 1
 	name   = "2. Prozedurales Gelände"
@@ -70,9 +69,23 @@ googleAnalytics = ""
 
 [[menu.main]]
 	weight = 1
-	name   = "3. Prozedurales Gelände"
+	name   = "3. Materialien"
 	url    = "chapter03/exercise01_a/"
 	parent = "Kapitel"
+
+[[menu.main]]
+	weight = 1
+	name   = "4. Signale"
+	url    = "chapter04/exercise01_a/"
+	parent = "Kapitel"
+
+
+[[menu.main]]
+	weight = 1
+	name   = "5. Vertex Shader"
+	url    = "chapter05/exercise01_a/"
+	parent = "Kapitel"
+
 
 # [[menu.main]]
 # 	weight = 11

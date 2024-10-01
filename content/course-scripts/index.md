@@ -59,3 +59,58 @@ func height_map(x: float, z: float) -> float:
  noise.frequency = noise_frequency
  return noise.get_noise_2d(x, z) * noise_amplitude
 {{</highlight>}}
+
+## Vorlesung 10.06. - Jump & Run
+{{<highlight gdscript>}}
+extends Node3D
+
+@onready var area3D: Area3D = $Area3D
+
+@export var speed: float = 1.0
+
+@export var jumpHeight: float = 2
+
+@export var gravitation: float = 0.5
+
+var currentFallSpeed: float = 0.0
+
+var maxFallSpeed: float = 10
+
+
+func walk(directtion: int, delta: float):
+ position.z += speed * directtion * delta
+
+func _input(event):
+ if(event.is_action_pressed("jump")):
+  jump()
+
+func jump():
+ currentFallSpeed = jumpHeight
+
+
+func calculate_fall_speed(delta: float):
+
+ var overlappingAreas = area3D.get_overlapping_areas()
+
+ var nextFallSpeed = currentFallSpeed - gravitation * delta
+
+ if(len(overlappingAreas) > 0 && currentFallSpeed < 0):
+  var platform = overlappingAreas[0].get_parent()
+  nextFallSpeed = 0
+  position.y = platform.position.y
+
+ if(currentFallSpeed < 0):
+  nextFallSpeed *= 1.1
+ currentFallSpeed = clamp(nextFallSpeed, -maxFallSpeed, maxFallSpeed)
+
+
+func _physics_process(delta):
+ calculate_fall_speed(delta)
+
+ position.y += currentFallSpeed * delta
+
+ if Input.is_action_pressed("walk_left"):
+  walk(1, delta)
+ if Input.is_action_pressed("walk_right"):
+  walk(-1, delta)
+{{</highlight>}}

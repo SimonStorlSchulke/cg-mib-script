@@ -4,7 +4,7 @@
     <title>Computergrafik MIB</title>
     <link>https://simonstorlschulke.github.io/cg-mib-2/</link>
     <description>Recent content on Computergrafik MIB</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>de</language>
     <atom:link href="https://simonstorlschulke.github.io/cg-mib-2/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -22,11 +22,25 @@
       <description>Im letzten Kapitel haben wir damit begonnen, een Script zu schreiben, welches uns eine prozedurale Landschaft generiert. Damit wollen wir nun weitermachen.&#xA;2.1 Normalen berechnen Beim letzten mal haben wir mit unserem Code sehr kleinteilig direkt auf den Meshdaten gearbeitet. Dazu nutzten wir Godots ArrayMesh-Datentyp. Godot bietet uns jedoch auch ausgereiftere Tools um mit Meshes zu arbeiten. Generell ist es ratsam bereits in einer Engine existierende Funktionalität nicht neu zu erfinden.</description>
     </item>
     <item>
+      <title>3. Signals</title>
+      <link>https://simonstorlschulke.github.io/cg-mib-2/chapter03/exercise01_a/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://simonstorlschulke.github.io/cg-mib-2/chapter03/exercise01_a/</guid>
+      <description>Oft brauchen wir bei der Gestalltung von 3D Szenen und Spielen Möglichkeiten zur Interaktion zwischen verschiedenen Objekten in der Szene. Hier kommen Signals ins Spiel. Das sind Nachrichten, die Nodes aussenden, wenn etwas Bestimmtes mit ihnen passiert, z.B. wenn ein Button gedrückt wird oder ein Objekt mit einem Collider kollidiert. Andere Nodes können sich mit diesem Signal verbinden und eine Funktion aufrufen, wenn das Ereignis eintritt.&#xA;Warum Signals statt einfach Methoden auf anderen Objekten direkt aufrufen?</description>
+    </item>
+    <item>
       <title>Allgemeines</title>
       <link>https://simonstorlschulke.github.io/cg-mib-2/general/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://simonstorlschulke.github.io/cg-mib-2/general/</guid>
       <description>Vorlesungsunterlagen für die Veranstalltung Computergrafik MIB - zweite Semesterhälfte.&#xA;Inhalt Interaktion mit 3D Szenen ermöglichen Automatisierung von Prozessen in der Meshgenerierung Shaderprogrammierung Algorithmische Erzeugung von Geometrien, Materialien und Texturen Auslesung und Nutzung von Daten für die Medienproduktion Zur praktischen Umsetzung dieser Themen wird die Game Engine Godot eingesetzt&#xA;Telnahmevoraussetzungen Benötigt:&#xA;Grundkenntnisse im Programmieren Grundverständnis für 3D Software Hilfreich:&#xA;Gundkenntnisse im Umgang mit GameEngines wie Unreal, Godot oder Unity Semesterprojekt nach ca 3-4 Vorlesungen Themenwahl (zur Verfügung gestellt oder eigenes) Konzeptvorstellung ca in VL 5 Präsentationen vor Gruppe in letzter VL Abgabe besteht aus einem Godotprojekt + Kurzer Dokumentation Beurteilungskriterien Skripting-Projekt Nach ca 3-4 Veranstaltungen wird von jeder Gruppe (1-3 Studierende) ein Thema im Bereich CG gewählt.</description>
+    </item>
+    <item>
+      <title>Codeschnipsel aus der Vorlesung</title>
+      <link>https://simonstorlschulke.github.io/cg-mib-2/course-python-scripts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://simonstorlschulke.github.io/cg-mib-2/course-python-scripts/</guid>
+      <description>SoSe24 </description>
     </item>
     <item>
       <title>Codeschnipsel aus der Vorlesung</title>
@@ -83,13 +97,6 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://simonstorlschulke.github.io/cg-mib-2/chapter11/exercise01_a/</guid>
       <description>Zur Generierung von Animationen stellt uns die Blender API verschiedene Möglichkeiten zur Verfügung. In folgender Übung werden wir uns die wichtigsten hiervon ansehen.&#xA;Keyframes Driver Scripted Expressions Custom Drivers App Handlers Keyframes Wir können die Blender API nutzen um per Script Keyframes zu setzen. Dafür wird die Methode keyframe_insert verwendet. Diese kann zum Beispiel von Objekten aus aufgerufen werden. Deren wichtigste Parameter sind data_path (Pfad zum Wert, der verwendet werden soll) und frame (Framenummer des Keyframes).</description>
-    </item>
-    <item>
-      <title>Übung 3 - Operatoren &amp; Addons</title>
-      <link>https://simonstorlschulke.github.io/cg-mib-2/chapter03/exercise01_a/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://simonstorlschulke.github.io/cg-mib-2/chapter03/exercise01_a/</guid>
-      <description>Bisher sind alle Funktionalitäten, die wir mit unseren Scripten erstellt haben auch nur als solche ausführbar - als Script im Texteditor. In dieser Übung wollen wir das ändern und Blender selbst um eine Benutzeroberfläche für die Generierung unseres Turms erweitern&#xA;Operatoren Wir haben bereits die ops Kategorie des bpy Moduls kennengelernt. Nun wollen wir unseren eigenen Operator schreiben, der dann auch über die API aufgerufen und mit der F3-Suche gefunden werden kann.</description>
     </item>
     <item>
       <title>Übung 4 - Meshgenerierung</title>

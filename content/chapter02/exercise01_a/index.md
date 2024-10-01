@@ -126,12 +126,3 @@ float fbm(in vec2 st, int OCTAVES) {
     return value;
 }
 ```
-
-## 2.4 Terrain Shading
-Wenn wir die Landschaft schon komplett im Code generieren, haben wir natürlich auch gar keine Lust, sie von Hand anzumalen. Wir brauchen daher noch eine Möglichkeit zu Texturierung des Meshes. Wir wollen zunächst eine verschneite Landschaft generieren und müssen daher nun eine Maske generieren, die zwischen Schnee und Fels mischen kann.
-
-![matterhorn](img/matterhorn.jpg)
-
-{{<todo>}}
-Überlege dir, anhand welcher Parameter so eine Unterscheidung stattfinden könnte und finde heraus, wie in Godot automatische Texturierung stattfinden könnte.
-{{</todo>}}
